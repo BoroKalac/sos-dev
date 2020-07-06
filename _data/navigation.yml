@@ -1,0 +1,14 @@
+- name: Početna
+  link: /
+- name: Deca (6-12)
+  link: /6-12.html
+- name: Tinejdžeri (13-18)
+  link: /13-18.html
+- name: Mladi (19 i više)
+  link: /19-30.html
+- name: Roditelji
+  link: /roditelji.html
+- name: O Nadelu
+  link: /o-nadelu.html
+- name: Blog
+  link: /blog.html

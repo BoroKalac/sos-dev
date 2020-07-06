@@ -1,0 +1,1076 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>13-18</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <script type="text/javascript" src="/assets/js/navigation.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <script>
+    <!--
+    (function(d, link) {
+        link = d.createElement('link');
+        link.rel = "stylesheet";
+        link.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css";
+        d.head.appendChild(link);
+    }(document));
+
+    //
+    -->
+</script>
+<style type="text/css">
+    <!--
+    @import url("https://fonts.googleapis.com/css?family=Roboto");
+
+    //
+    -->
+</style>
+<style type="text/css">
+    <!--
+    .ddr-page-wrapper * {
+        box-sizing: border-box;
+    }
+
+    .ddr-page-wrapper {
+        position: relative;
+        padding: 0px;
+        margin: 0px;
+        font-family: sans-serif;
+        font-size: 16px;
+    }
+
+    .ddr-page-wrapper .ddr-page {
+        position: relative;
+    }
+
+    .ddr-page-wrapper .ddr-page .ddr-page-section-pre-content::after,
+    .ddr-page-wrapper .ddr-page .ddr-page-section-pre-content::before,
+    .ddr-page-wrapper .ddr-page>div::after,
+    .ddr-page-wrapper .ddr-page>div::before {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .ddr-page-wrapper div,
+    .ddr-page-wrapper h1,
+    .ddr-page-wrapper h2,
+    .ddr-page-wrapper h3,
+    .ddr-page-wrapper h4,
+    .ddr-page-wrapper h5,
+    .ddr-page-wrapper h6,
+    .ddr-page-wrapper p,
+    .ddr-page-wrapper span {
+        line-height: normal;
+    }
+
+    .ddr-page-row,
+    .ddr-page-section-wrapper .ddr-page-section {
+        position: relative;
+        box-sizing: border-box;
+    }
+
+    .ddr-page-row {
+        display: flex;
+        width: 100%;
+    }
+
+    .ddr-page-row__wrap {
+        flex-wrap: wrap;
+    }
+
+    .ddr-page-row__wrap .ddr-page-column__wrap {
+        width: 100% !important;
+    }
+
+    .ddr-page-row__wrap-reverse {
+        flex-wrap: wrap-reverse;
+    }
+
+    .ddr-page-row__wrap-reverse .ddr-page-column__wrap-reverse {
+        width: 100% !important;
+    }
+
+    .ddr-page-column {
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        position: relative;
+        align-content: flex-start;
+    }
+
+    .ddr-page-widget {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .dashed-border {
+        border: 1px dashed rgb(135, 135, 135);
+    }
+
+    .headline-edit-wrapper {
+        cursor: text;
+    }
+
+    .section-slider .ddr-page-section-widget-drop-suggestion-wrapper {
+        padding-bottom: 7px;
+    }
+
+    .ddr-page-widget__sections-slider .toolbox-controls {
+        justify-content: flex-start !important;
+    }
+
+    .ddr-widget-toolbox--section-slider .toolbox-controls .ddr-widget-toolbox__sub-tool--duplicate,
+    .ddr-widget-toolbox--section-slider .toolbox-controls .ddr-widget-toolbox__tool--duplicate,
+    .ddr-widget-toolbox--section-slider .toolbox-controls .ddr-widget-toolbox__tool--move,
+    .ddr-widget-toolbox--section-slider .toolbox-controls .ddr-widget-toolbox__tool--settings {
+        background-color: rgb(226, 118, 37);
+    }
+
+    .ddr-widget-toolbox--section-slider .toolbox-controls .ddr-widget-toolbox__tool--delete {
+        background-color: rgb(72, 72, 72);
+    }
+
+    .ddr-widget-toolbox--section-slider .toolbox-controls .ddr-widget-toolbox__tool.ddr-widget-toolbox__tool--delete:hover {
+        background-color: rgb(58, 65, 74);
+    }
+
+    .ddr-widget-toolbox--section-slider .toolbox-controls .ddr-widget-toolbox__tool:hover {
+        background-color: rgb(239, 56, 27);
+    }
+
+    .ddr-page-widget-overlay-wrapper:hover .ddr-widget-toolbox--section-slider {
+        border: 2px solid rgb(226, 118, 37) !important;
+    }
+
+    .ddr-widget-toolbox--active.ddr-widget-toolbox--section-slider {
+        border: 2px solid rgb(226, 118, 37);
+    }
+
+    .ddr-widget {
+        background-color: transparent;
+        background-image: none;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        height: auto;
+        width: auto;
+        max-height: none;
+        max-width: none;
+        min-height: 0px;
+        min-width: 0px;
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+    }
+
+    .ddr-widget__rich-text {
+        position: relative;
+        cursor: auto;
+        overflow-wrap: break-word;
+        overflow: hidden;
+    }
+
+    .ddr-widget__spacer {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .ddr-widget__icon {
+        position: relative;
+        text-align: center;
+        overflow: hidden;
+        display: flex;
+    }
+
+    .ddr-widget__icon>div {
+        display: inline-block;
+    }
+
+    .ddr-widget__icon a,
+    .ddr-widget__icon i {
+        font: initial;
+        overflow: hidden;
+    }
+
+    .ddr-widget__icon i {
+        display: block;
+    }
+
+    .ddr-widget__icon a,
+    .ddr-widget__icon a:active,
+    .ddr-widget__icon a:focus,
+    .ddr-widget__icon a:hover,
+    .ddr-widget__icon a:link,
+    .ddr-widget__icon a:visited {
+        display: inline-block;
+        vertical-align: middle;
+        color: inherit;
+        text-decoration: none;
+        box-sizing: border-box;
+        border: none;
+        box-shadow: none;
+    }
+
+    @media (min-width: 1281px) {
+        .ddr-page-row__wrap--max {
+            flex-wrap: wrap;
+        }
+
+        .ddr-page-row__wrap--max .ddr-page-column__wrap--max {
+            width: 100% !important;
+        }
+
+        .ddr-page-row__wrap-reverse--max {
+            flex-wrap: wrap-reverse;
+        }
+
+        .ddr-page-row__wrap-reverse--max .ddr-page-column__wrap-reverse--max {
+            width: 100% !important;
+        }
+
+        .ddr-page-column__hide--max,
+        .ddr-page-widget__hide--max {
+            display: none;
+        }
+    }
+
+    @media (max-width: 1280px) and (min-width: 1025px) {
+        .ddr-page-row__wrap--1280 {
+            flex-wrap: wrap;
+        }
+
+        .ddr-page-row__wrap--1280 .ddr-page-column__wrap--1280 {
+            width: 100% !important;
+        }
+
+        .ddr-page-row__wrap-reverse--1280 {
+            flex-wrap: wrap-reverse;
+        }
+
+        .ddr-page-row__wrap-reverse--1280 .ddr-page-column__wrap-reverse--1280 {
+            width: 100% !important;
+        }
+
+        .ddr-page-column__hide--1280,
+        .ddr-page-widget__hide--1280 {
+            display: none;
+        }
+    }
+
+    @media (max-width: 1024px) and (min-width: 769px) {
+        .ddr-page-row__wrap--1024 {
+            flex-wrap: wrap;
+        }
+
+        .ddr-page-row__wrap--1024 .ddr-page-column__wrap--1024 {
+            width: 100% !important;
+        }
+
+        .ddr-page-row__wrap-reverse--1024 {
+            flex-wrap: wrap-reverse;
+        }
+
+        .ddr-page-row__wrap-reverse--1024 .ddr-page-column__wrap-reverse--1024 {
+            width: 100% !important;
+        }
+
+        .ddr-page-column__hide--1024,
+        .ddr-page-widget__hide--1024 {
+            display: none;
+        }
+    }
+
+    @media (max-width: 768px) and (min-width: 481px) {
+        .ddr-page-row__wrap--768 {
+            flex-wrap: wrap;
+        }
+
+        .ddr-page-row__wrap--768 .ddr-page-column__wrap--768 {
+            width: 100% !important;
+        }
+
+        .ddr-page-row__wrap-reverse--768 {
+            flex-wrap: wrap-reverse;
+        }
+
+        .ddr-page-row__wrap-reverse--768 .ddr-page-column__wrap-reverse--768 {
+            width: 100% !important;
+        }
+
+        .ddr-page-column__hide--768,
+        .ddr-page-widget__hide--768 {
+            display: none;
+        }
+    }
+
+    @media (max-width: 480px) and (min-width: 321px) {
+        .ddr-page-row__wrap--480 {
+            flex-wrap: wrap;
+        }
+
+        .ddr-page-row__wrap--480 .ddr-page-column__wrap--480 {
+            width: 100% !important;
+        }
+
+        .ddr-page-row__wrap-reverse--480 {
+            flex-wrap: wrap-reverse;
+        }
+
+        .ddr-page-row__wrap-reverse--480 .ddr-page-column__wrap-reverse--480 {
+            width: 100% !important;
+        }
+
+        .ddr-page-column__hide--480,
+        .ddr-page-widget__hide--480 {
+            display: none;
+        }
+    }
+
+    @media (max-width: 320px) and (min-width: 0px) {
+        .ddr-page-row__wrap--320 {
+            flex-wrap: wrap;
+        }
+
+        .ddr-page-row__wrap--320 .ddr-page-column__wrap--320 {
+            width: 100% !important;
+        }
+
+        .ddr-page-row__wrap-reverse--320 {
+            flex-wrap: wrap-reverse;
+        }
+
+        .ddr-page-row__wrap-reverse--320 .ddr-page-column__wrap-reverse--320 {
+            width: 100% !important;
+        }
+
+        .ddr-page-column__hide--320,
+        .ddr-page-widget__hide--320 {
+            display: none;
+        }
+    }
+
+    [data-ddr-page-widget-additional-css-id="a20b042aa8"] {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    undefined[data-ddr-page-widget-additional-css-id="64f1d984a2"] {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    //
+    -->
+</style>
+<script type="text/javascript">
+    <!--
+    (function() {
+        var head = document.getElementsByTagName('head').item(0),
+            url = 'https://app.dragdropr.com/components/dependency-manager.js?version=1.0.8';
+
+        for (var i = 0; i < head.children.length; i++) {
+            if (head.children.item(i).tagName === 'SCRIPT' && head.children.item(i).src.indexOf(url) !== -1) {
+                return;
+            }
+        }
+
+        var node = document.createElement('script');
+        node.async = 1;
+        node.src = url;
+        head.insertBefore(node, null);
+    })();
+
+    //
+    -->
+</script>
+<div class="ddr-page-wrapper" data-ddr-page-id="339991c0-bd23-11ea-b901-0242ac140009">
+    <div class="ddr-page">
+        <div id="ddr-9ce1c954c7" class="ddr-page-section-wrapper ddr-page-section-wrapper-0" style="background-color: rgb(0, 140, 153);">
+            <div class="ddr-page-section-pre-content ddr-page-section-pre-content-0">
+                <div class="ddr-page-section ddr-page-section-0">
+                    <div class="ddr-page-row ddr-page-row-0 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " style="width: 3.33333%;">
+                            <div id="ddr-d604de3829" class="ddr-page-widget ddr-page-widget__icon ddr-page-widget-0 ">
+                                <div class="ddr-widget">
+                                    <div class="ddr-widget__icon" style="justify-content: center;"><a target="_self" style="margin: 20px 0px;"><i class="fa fa-phone" style="font-size: 20px; color: rgb(255, 255, 255); font-family: FontAwesome;"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ddr-page-column ddr-page-column-1 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " style="width: 11.6667%;">
+                            <div id="ddr-4ff3529aaa" class="ddr-page-widget ddr-page-widget__rich-text ddr-page-widget-0 " data-ddr-page-widget-additional-css-id="a20b042aa8">
+                                <div class="ddr-widget">
+                                    <div id="ddr-rich-text-010" class="ddr-widget__rich-text" style="margin: 5px 30px 0px 0px;">
+                                        <p><span style="color: #ffffff;">Pozovite: 116 111</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ddr-page-column ddr-page-column-2 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " style="width: 3.33333%;">
+                            <div id="ddr-d9252f9be6" class="ddr-page-widget ddr-page-widget__icon ddr-page-widget-0 ">
+                                <div class="ddr-widget">
+                                    <div class="ddr-widget__icon" style="justify-content: center;"><a target="_self" style="margin: 20px 0px;"><i class="fa fa-comments" style="font-size: 20px; color: rgb(255, 255, 255); font-family: FontAwesome;"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ddr-page-column ddr-page-column-3 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " style="width: 61.6667%;">
+                            <div id="ddr-db8a0dab91" class="ddr-page-widget ddr-page-widget__rich-text ddr-page-widget-0 " data-ddr-page-widget-additional-css-id="64f1d984a2">
+                                <div class="ddr-widget">
+                                    <div id="ddr-rich-text-030" class="ddr-widget__rich-text" style="margin: 5px 0px 0px;">
+                                        <p><span style="color: #ffffff;">SOS Chat</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ddr-page-column ddr-page-column-4 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " style="width: 20%;">
+                            <div id="ddr-8b2256f362" class="ddr-page-widget ddr-page-widget__spacer ddr-page-widget-0 ">
+                                <div class="ddr-widget">
+                                    <div class="ddr-widget__spacer" style="height: 28px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <nav class="navigation-top" id="navigationTop">
+  
+    <a href="/" >
+      Početna
+    </a>
+  
+    <a href="/6-12.html" >
+      Deca (6-12)
+    </a>
+  
+    <a href="/13-18.html" class="menu-item-active">
+      Tinejdžeri (13-18)
+    </a>
+  
+    <a href="/19-30.html" >
+      Mladi (19 i više)
+    </a>
+  
+    <a href="/roditelji.html" >
+      Roditelji
+    </a>
+  
+    <a href="/o-nadelu.html" >
+      O Nadelu
+    </a>
+  
+    <a href="/blog.html" >
+      Blog
+    </a>
+  
+    <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+      <i class="fa fa-bars"></i>
+  </a>
+</nav>
+    <html>
+    <body>
+        <style type="text/css">
+    <!--
+    @import url("https://fonts.googleapis.com/css?family=Roboto");
+
+    //
+    -->
+</style>
+<style type="text/css">
+    <!--
+    .ddr-page-wrapper * {
+        box-sizing: border-box;
+    }
+
+    .ddr-page-wrapper {
+        position: relative;
+        padding: 0px;
+        margin: 0px;
+        font-family: sans-serif;
+        font-size: 16px;
+    }
+
+    .ddr-page-wrapper .ddr-page {
+        position: relative;
+    }
+
+    .ddr-page-wrapper .ddr-page .ddr-page-section-pre-content::after,
+    .ddr-page-wrapper .ddr-page .ddr-page-section-pre-content::before,
+    .ddr-page-wrapper .ddr-page>div::after,
+    .ddr-page-wrapper .ddr-page>div::before {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .ddr-page-wrapper div,
+    .ddr-page-wrapper h1,
+    .ddr-page-wrapper h2,
+    .ddr-page-wrapper h3,
+    .ddr-page-wrapper h4,
+    .ddr-page-wrapper h5,
+    .ddr-page-wrapper h6,
+    .ddr-page-wrapper p,
+    .ddr-page-wrapper span {
+        line-height: normal;
+    }
+
+    .ddr-page-row,
+    .ddr-page-section-wrapper .ddr-page-section {
+        position: relative;
+        box-sizing: border-box;
+    }
+
+    .ddr-page-row {
+        display: flex;
+        width: 100%;
+    }
+
+    .ddr-page-row__wrap {
+        flex-wrap: wrap;
+    }
+
+    .ddr-page-row__wrap .ddr-page-column__wrap {
+        width: 100% !important;
+    }
+
+    .ddr-page-row__wrap-reverse {
+        flex-wrap: wrap-reverse;
+    }
+
+    .ddr-page-row__wrap-reverse .ddr-page-column__wrap-reverse {
+        width: 100% !important;
+    }
+
+    .ddr-page-column {
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        position: relative;
+        align-content: flex-start;
+    }
+
+    .ddr-page-widget {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .dashed-border {
+        border: 1px dashed rgb(135, 135, 135);
+    }
+
+    .headline-edit-wrapper {
+        cursor: text;
+    }
+
+    .section-slider .ddr-page-section-widget-drop-suggestion-wrapper {
+        padding-bottom: 7px;
+    }
+
+    .ddr-page-widget__sections-slider .toolbox-controls {
+        justify-content: flex-start !important;
+    }
+
+    .ddr-widget-toolbox--section-slider .toolbox-controls .ddr-widget-toolbox__sub-tool--duplicate,
+    .ddr-widget-toolbox--section-slider .toolbox-controls .ddr-widget-toolbox__tool--duplicate,
+    .ddr-widget-toolbox--section-slider .toolbox-controls .ddr-widget-toolbox__tool--move,
+    .ddr-widget-toolbox--section-slider .toolbox-controls .ddr-widget-toolbox__tool--settings {
+        background-color: rgb(226, 118, 37);
+    }
+
+    .ddr-widget-toolbox--section-slider .toolbox-controls .ddr-widget-toolbox__tool--delete {
+        background-color: rgb(72, 72, 72);
+    }
+
+    .ddr-widget-toolbox--section-slider .toolbox-controls .ddr-widget-toolbox__tool.ddr-widget-toolbox__tool--delete:hover {
+        background-color: rgb(58, 65, 74);
+    }
+
+    .ddr-widget-toolbox--section-slider .toolbox-controls .ddr-widget-toolbox__tool:hover {
+        background-color: rgb(239, 56, 27);
+    }
+
+    .ddr-page-widget-overlay-wrapper:hover .ddr-widget-toolbox--section-slider {
+        border: 2px solid rgb(226, 118, 37) !important;
+    }
+
+    .ddr-widget-toolbox--active.ddr-widget-toolbox--section-slider {
+        border: 2px solid rgb(226, 118, 37);
+    }
+
+    .ddr-widget {
+        background-color: transparent;
+        background-image: none;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        height: auto;
+        width: auto;
+        max-height: none;
+        max-width: none;
+        min-height: 0px;
+        min-width: 0px;
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+    }
+
+    .ddr-widget__rich-text {
+        position: relative;
+        cursor: auto;
+        overflow-wrap: break-word;
+        overflow: hidden;
+    }
+
+    .ddr-widget__image {
+        position: relative;
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+        display: flex;
+    }
+
+    .ddr-widget__image a,
+    .ddr-widget__image img {
+        overflow: hidden;
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .ddr-widget__image a,
+    .ddr-widget__image a:active,
+    .ddr-widget__image a:focus,
+    .ddr-widget__image a:hover,
+    .ddr-widget__image a:link,
+    .ddr-widget__image a:visited {
+        display: inline-block;
+        vertical-align: middle;
+        color: inherit;
+        text-decoration: none;
+        border: none;
+        box-shadow: none;
+    }
+
+    .ddr-widget__spacer {
+        position: relative;
+        overflow: hidden;
+    }
+
+    @media (min-width: 1281px) {
+        .ddr-page-row__wrap--max {
+            flex-wrap: wrap;
+        }
+
+        .ddr-page-row__wrap--max .ddr-page-column__wrap--max {
+            width: 100% !important;
+        }
+
+        .ddr-page-row__wrap-reverse--max {
+            flex-wrap: wrap-reverse;
+        }
+
+        .ddr-page-row__wrap-reverse--max .ddr-page-column__wrap-reverse--max {
+            width: 100% !important;
+        }
+
+        .ddr-page-column__hide--max,
+        .ddr-page-widget__hide--max {
+            display: none;
+        }
+    }
+
+    @media (max-width: 1280px) and (min-width: 1025px) {
+        .ddr-page-row__wrap--1280 {
+            flex-wrap: wrap;
+        }
+
+        .ddr-page-row__wrap--1280 .ddr-page-column__wrap--1280 {
+            width: 100% !important;
+        }
+
+        .ddr-page-row__wrap-reverse--1280 {
+            flex-wrap: wrap-reverse;
+        }
+
+        .ddr-page-row__wrap-reverse--1280 .ddr-page-column__wrap-reverse--1280 {
+            width: 100% !important;
+        }
+
+        .ddr-page-column__hide--1280,
+        .ddr-page-widget__hide--1280 {
+            display: none;
+        }
+    }
+
+    @media (max-width: 1024px) and (min-width: 769px) {
+        .ddr-page-row__wrap--1024 {
+            flex-wrap: wrap;
+        }
+
+        .ddr-page-row__wrap--1024 .ddr-page-column__wrap--1024 {
+            width: 100% !important;
+        }
+
+        .ddr-page-row__wrap-reverse--1024 {
+            flex-wrap: wrap-reverse;
+        }
+
+        .ddr-page-row__wrap-reverse--1024 .ddr-page-column__wrap-reverse--1024 {
+            width: 100% !important;
+        }
+
+        .ddr-page-column__hide--1024,
+        .ddr-page-widget__hide--1024 {
+            display: none;
+        }
+    }
+
+    @media (max-width: 768px) and (min-width: 481px) {
+        .ddr-page-row__wrap--768 {
+            flex-wrap: wrap;
+        }
+
+        .ddr-page-row__wrap--768 .ddr-page-column__wrap--768 {
+            width: 100% !important;
+        }
+
+        .ddr-page-row__wrap-reverse--768 {
+            flex-wrap: wrap-reverse;
+        }
+
+        .ddr-page-row__wrap-reverse--768 .ddr-page-column__wrap-reverse--768 {
+            width: 100% !important;
+        }
+
+        .ddr-page-column__hide--768,
+        .ddr-page-widget__hide--768 {
+            display: none;
+        }
+    }
+
+    @media (max-width: 480px) and (min-width: 321px) {
+        .ddr-page-row__wrap--480 {
+            flex-wrap: wrap;
+        }
+
+        .ddr-page-row__wrap--480 .ddr-page-column__wrap--480 {
+            width: 100% !important;
+        }
+
+        .ddr-page-row__wrap-reverse--480 {
+            flex-wrap: wrap-reverse;
+        }
+
+        .ddr-page-row__wrap-reverse--480 .ddr-page-column__wrap-reverse--480 {
+            width: 100% !important;
+        }
+
+        .ddr-page-column__hide--480,
+        .ddr-page-widget__hide--480 {
+            display: none;
+        }
+    }
+
+    @media (max-width: 320px) and (min-width: 0px) {
+        .ddr-page-row__wrap--320 {
+            flex-wrap: wrap;
+        }
+
+        .ddr-page-row__wrap--320 .ddr-page-column__wrap--320 {
+            width: 100% !important;
+        }
+
+        .ddr-page-row__wrap-reverse--320 {
+            flex-wrap: wrap-reverse;
+        }
+
+        .ddr-page-row__wrap-reverse--320 .ddr-page-column__wrap-reverse--320 {
+            width: 100% !important;
+        }
+
+        .ddr-page-column__hide--320,
+        .ddr-page-widget__hide--320 {
+            display: none;
+        }
+    }
+
+    [data-ddr-page-widget-additional-css-id="a0483344bc"] {}
+
+    #ddr-rich-text-200 * {
+        line-height: 1.5;
+    }
+
+    undefinedundefined[data-ddr-page-widget-additional-css-id="0611f50935"] {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #ddr-rich-text-201 * {
+        line-height: 1.5;
+    }
+
+    undefinedundefined[data-ddr-page-widget-additional-css-id="011dcb350a"] {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #ddr-rich-text-202 * {
+        line-height: 1.5;
+    }
+
+    undefinedundefined[data-ddr-page-widget-additional-css-id="011dcb350a"] {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #ddr-rich-text-203 * {
+        line-height: 1.5;
+    }
+
+    undefinedundefined[data-ddr-page-widget-additional-css-id="011dcb350a"] {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #ddr-rich-text-204 * {
+        line-height: 1.5;
+    }
+
+    undefinedundefined[data-ddr-page-widget-additional-css-id="011dcb350a"] {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #ddr-rich-text-205 * {
+        line-height: 1.5;
+    }
+
+    undefinedundefined[data-ddr-page-widget-additional-css-id="011dcb350a"] {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    undefined[data-ddr-page-widget-additional-css-id="a0483344bc"] {}
+
+    #ddr-rich-text-1200 * {
+        line-height: 1.1;
+    }
+
+    undefinedundefinedundefinedundefined[data-ddr-page-widget-additional-css-id="240f8744c3"] {}
+
+    //
+    -->
+</style>
+<script>
+    <!--
+    (function(src, cb) {
+        var s = document.createElement('script');
+        s.setAttribute('src', src);
+        s.onload = cb;
+        (document.head || document.body).appendChild(s);
+    })('https://ucarecdn.com/libs/blinkloader/3.x/blinkloader.min.js', function() {
+        window.Blinkloader.optimize({
+            pubkey: "7e7cb2191e43d9e6ba19",
+            fadeIn: true
+        });
+    });
+
+    //
+    -->
+</script>
+<script type="text/javascript">
+    <!--
+    (function() {
+        var head = document.getElementsByTagName('head').item(0),
+            url = 'https://app.dragdropr.com/components/dependency-manager.js?version=1.0.8';
+
+        for (var i = 0; i < head.children.length; i++) {
+            if (head.children.item(i).tagName === 'SCRIPT' && head.children.item(i).src.indexOf(url) !== -1) {
+                return;
+            }
+        }
+
+        var node = document.createElement('script');
+        node.async = 1;
+        node.src = url;
+        head.insertBefore(node, null);
+    })();
+
+    //
+    -->
+</script>
+<div class="ddr-page-wrapper" data-ddr-page-id="5552f6d2-bf74-11ea-b74d-0242ac140009">
+    <div class="ddr-page">
+        <div id="ddr-9a411fa46a" class="ddr-page-section-wrapper ddr-page-section-wrapper-0" style="background-repeat: no-repeat; background-position: center center; background-color: rgb(255, 255, 255);">
+            <div class="ddr-page-section-pre-content ddr-page-section-pre-content-0" style="max-width: 1300px; margin: auto;">
+                <div class="ddr-page-section ddr-page-section-0" style="padding-left: 30px; padding-right: 30px;">
+                    <div class="ddr-page-row ddr-page-row-0 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " style="width: 100%;">
+                            <div id="ddr-2caf17a0a9" class="ddr-page-widget ddr-page-widget__rich-text ddr-page-widget-0 " data-ddr-page-widget-additional-css-id="a0483344bc">
+                                <div class="ddr-widget">
+                                    <div id="ddr-rich-text-000" class="ddr-widget__rich-text" style="margin: 30px 30px 0px;">
+                                        <p style="text-align: center;"><span style="color: #555555;"><strong><span style="font-family: roboto, sans-serif; font-size: 30px;">BIRAM DA NE MORAM</span></strong></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ddr-34a0f48152" class="ddr-page-widget ddr-page-widget__image ddr-page-widget-1 ">
+                                <div class="ddr-widget">
+                                    <div class="ddr-widget__image" style="justify-content: center;"><a target="_self" style="width: 80px; height: 9px; padding-left: 0px; margin: 1px 30px;"><img data-blink-src="https://cdn.dragdropr.com/d841b4a3-f2f5-48e9-8e82-e46494b1eb5c/" style="height: 9px; width: 80px;"></a>
+                                        <div class="ddr-hot-spots__items-wrapper"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ddr-page-row ddr-page-row-1 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " style="width: 100%;">
+                            <div id="ddr-f3bb0a66a6" class="ddr-page-widget ddr-page-widget__spacer ddr-page-widget-0 ">
+                                <div class="ddr-widget">
+                                    <div class="ddr-widget__spacer" style="height: 25px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ddr-page-row ddr-page-row-2 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768 ddr-page-row__wrap--1024">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 ddr-page-column__wrap--1024 " style="width: 100%;">
+                            <div id="ddr-5ed0b32707" class="ddr-page-widget ddr-page-widget__rich-text ddr-page-widget-0 " data-ddr-page-widget-additional-css-id="0611f50935">
+                                <div class="ddr-widget">
+                                    <div id="ddr-rich-text-200" class="ddr-widget__rich-text" style="margin: 0px; padding-left: 10px; padding-right: 10px;">
+                                        <p><span style="font-family: roboto, sans-serif; color: #555555;"><span style="font-weight: 400;">Sigurni chat je poverljiv, anoniman i siguran način da se obratiš nekome ko je stručan i ko može da ti pruži savet kako da rešiš određenu situaciju. Chat je namenjen deci, tinejdžerima i mladim osobama sa najrazličitijim problemima – od uspeha u školi i ljubavnih problema do ozbiljnih primera zanemarivanja ili zlostavljanja. Na našem chat-u možeš otvoreno da govoriš o svojim problemima, osećanjima ili nedoumicama koje imaš u vezi sa određenim životnim situacijama. Kakav god da je razlog, bitno je da znaš da tvoja prava ne treba da budu ugrožena ni na jedna način.</span></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ddr-18b51e1b0d" class="ddr-page-widget ddr-page-widget__rich-text ddr-page-widget-1 " data-ddr-page-widget-additional-css-id="011dcb350a">
+                                <div class="ddr-widget">
+                                    <div id="ddr-rich-text-201" class="ddr-widget__rich-text" style="margin: 0px; padding-left: 10px; padding-right: 10px;">
+                                        <p><span style="font-weight: 400; color: #555555; font-family: roboto, sans-serif;"><span style="font-weight: 400;">SOS telefonska linija 116111 postoji već odavno, ali smo smatrali da neku decu ili tinejdžere može da bude strah ili da se osećaju neprijatno prilikom telefonskog razgovora, pa smo uveli i chat, budući da je većini lakše da nešto napišu nego da to glasno izgovore.</span></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ddr-796b8358ff" class="ddr-page-widget ddr-page-widget__rich-text ddr-page-widget-2 " data-ddr-page-widget-additional-css-id="011dcb350a">
+                                <div class="ddr-widget">
+                                    <div id="ddr-rich-text-202" class="ddr-widget__rich-text" style="margin: 0px; padding-left: 10px; padding-right: 10px;">
+                                        <p><span style="font-weight: 400; color: #555555; font-family: roboto, sans-serif;"><span style="font-weight: 400;">Telefonska linija je otvorena, a <strong>chat</strong>… </span></span></p>
+                                        <p><span style="font-weight: 400; color: #555555; font-family: roboto, sans-serif;"><span style="font-weight: 400;">Sve što napišeš na sigurnom chat-u je anonimno i poverljivo, što znači da sve ostaje između tebe i sigirnog chat-a, a informacija da si posetio/la ovu web stranicu. Više o tome kako možeš da izbrišeš istoriju pretraživanja pogledaj <strong>ovde</strong>.</span></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ddr-3f674cc868" class="ddr-page-widget ddr-page-widget__rich-text ddr-page-widget-3 " data-ddr-page-widget-additional-css-id="011dcb350a">
+                                <div class="ddr-widget">
+                                    <div id="ddr-rich-text-203" class="ddr-widget__rich-text" style="margin: 0px; padding-left: 10px; padding-right: 10px;">
+                                        <p><span style="font-weight: 400; color: #555555; font-family: roboto, sans-serif;"><span style="font-weight: 400;">Od tebe se očekuje da otkrivaš podatke o sebi - ime, prezime, odakle si ili bilo koje druge podatke, tako da možeš poptuno sigurno da poveriš svoj problem nekome od naših stručnjaka. Osim chat-a, na raspolaganju ti je i potpuno besplatna linija 116111 koju možeš da pozoveš sa <strong>bilo kog telefona, bez obzira gde se nalaziš</strong>.</span></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ddr-cd6cceaaed" class="ddr-page-widget ddr-page-widget__rich-text ddr-page-widget-4 " data-ddr-page-widget-additional-css-id="011dcb350a">
+                                <div class="ddr-widget">
+                                    <div id="ddr-rich-text-204" class="ddr-widget__rich-text" style="margin: 0px; padding-left: 10px; padding-right: 10px;">
+                                        <p><span style="font-weight: 400; color: #555555;">Sigirni chat možeš da koristiš svaki put:</span></p>
+                                        <ul>
+                                            <li style="font-weight: 400;"><span style="font-weight: 400; color: #555555;">Kada imaš problem o kome želiš da razgovaraš ili neku nedoumicu koju želiš da rešiš (ocene, odnos sa roditeljima, ljubavni odnosi…)</span></li>
+                                            <li style="font-weight: 400;"><span style="font-weight: 400; color: #555555;">Kada ti je potreban pomoć i podrška – Mi slušamo tebe!</span></li>
+                                            <li style="font-weight: 400;"><span style="font-weight: 400; color: #555555;">Kada se osećaš ugroženo</span></li>
+                                            <li style="font-weight: 400;"><span style="font-weight: 400; color: #555555;">Kada se bojiš za sebe, svoj život ili nekog bliskog</span></li>
+                                            <li style="font-weight: 400;"><span style="font-weight: 400; color: #555555;">Kada želiš da ragovaraš o bilo kojoj temi</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ddr-42674f70d9" class="ddr-page-widget ddr-page-widget__rich-text ddr-page-widget-5 " data-ddr-page-widget-additional-css-id="011dcb350a">
+                                <div class="ddr-widget">
+                                    <div id="ddr-rich-text-205" class="ddr-widget__rich-text" style="margin: 0px; padding-left: 10px; padding-right: 10px;">
+                                        <p><span style="font-weight: 400; color: #555555;"><span style="font-weight: 400;">Sa tobom će razgovarati stručni i obrazovani mladi ljudi sa iskustvom u razgovoru i pružanju pomoći i savetima deci i tinejdžerima. To su stvarni ljudi koji zaista žele da ti pomognu, koji znaju koliko je hrabrosti potrbno da nekome poveriš svoj problem, koji će te pažljivo saslušati, koji su svesni sa kakvim sve problemima možeš da se susretneš, koji te neće osuđivati i, što je najvažnije, kojima možeš da veruješ.</span></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ddr-page-row ddr-page-row-3 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 ddr-page-column__hide--320 ddr-page-column__hide--480 ddr-page-column__hide--768" style="width: 100%;">
+                            <div id="ddr-600ba0aa20" class="ddr-page-widget ddr-page-widget__spacer ddr-page-widget-0 ddr-page-widget__hide--320 ddr-page-widget__hide--480 ddr-page-widget__hide--768">
+                                <div class="ddr-widget">
+                                    <div class="ddr-widget__spacer" style="height: 64px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ddr-dee66d9c08" class="ddr-page-section-wrapper ddr-page-section-wrapper-1" style="background-color: rgb(241, 241, 241);">
+            <div class="ddr-page-section-pre-content ddr-page-section-pre-content-1" style="max-width: 1300px; margin: auto;">
+                <div class="ddr-page-section ddr-page-section-1">
+                    <div class="ddr-page-row ddr-page-row-0 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " style="width: 100%;">
+                            <div id="ddr-28513d95dc" class="ddr-page-widget ddr-page-widget__rich-text ddr-page-widget-0 " data-ddr-page-widget-additional-css-id="a0483344bc">
+                                <div class="ddr-widget">
+                                    <div id="ddr-rich-text-1000" class="ddr-widget__rich-text" style="margin: 30px 30px 0px;">
+                                        <p style="text-align: center;"><span style="color: #555555; font-size: 24px;"><strong><span style="font-family: roboto, sans-serif;">Informacije i saveti</span></strong></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="ddr-df208d642d" class="ddr-page-widget ddr-page-widget__image ddr-page-widget-1 ">
+                                <div class="ddr-widget">
+                                    <div class="ddr-widget__image" style="justify-content: center;"><a target="_self" style="width: 80px; height: 9px; padding-left: 0px; margin: 5px 30px; padding-top: 0px; padding-bottom: 0px;"><img data-blink-src="https://cdn.dragdropr.com/d841b4a3-f2f5-48e9-8e82-e46494b1eb5c/" style="height: 9px; width: 80px;"></a>
+                                        <div class="ddr-hot-spots__items-wrapper"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ddr-page-row ddr-page-row-1 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " style="width: 100%;">
+                            <div id="ddr-8f6d7a2c93" class="ddr-page-widget ddr-page-widget__spacer ddr-page-widget-0 ">
+                                <div class="ddr-widget">
+                                    <div class="ddr-widget__spacer" style="height: 25px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ddr-page-row ddr-page-row-2 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " style="width: 50%;">
+                            <div id="ddr-b6f6a28a88" class="ddr-page-widget ddr-page-widget__rich-text ddr-page-widget-0 " data-ddr-page-widget-additional-css-id="240f8744c3">
+                                <div class="ddr-widget">
+                                    <div id="ddr-rich-text-1200" class="ddr-widget__rich-text" style="margin: 0px 30px 30px;">
+                                        <p style="text-align: center;"><strong><span style="font-family: roboto, sans-serif; color: #555555;">Prava dece – Konvencija...</span></strong></p>
+                                        <p style="text-align: center;"><strong><span style="font-family: roboto, sans-serif; color: #555555;">Moja prava... i moje odgovornosti</span></strong></p>
+                                        <p style="text-align: center;"><strong><span style="font-family: roboto, sans-serif; color: #555555;">Kako da se nosim sa depresijom?</span></strong></p>
+                                        <p style="text-align: center;"><strong><span style="font-family: roboto, sans-serif; color: #555555;">Kome da kažem kako se osećam?</span></strong></p>
+                                        <p style="text-align: center;"><strong><span style="font-family: roboto, sans-serif; color: #555555;">Da li su ljubomora i zavist OK?</span></strong></p>
+                                        <p style="text-align: center;"><strong><span style="font-family: roboto, sans-serif; color: #555555;">Da li sam anksiozan/na ili samo malo zabrinut/a?</span></strong></p>
+                                        <p style="text-align: center;"><strong><span style="font-family: roboto, sans-serif; color: #555555;">Internet i društvene mreže – no safe place?</span></strong></p>
+                                        <p style="text-align: center;"><strong><span style="font-family: roboto, sans-serif; color: #555555;">Zašto baš ja? Vršnjačko i grupno nasilje</span></strong></p>
+                                        <p style="text-align: center;"><strong><span style="font-family: roboto, sans-serif; color: #555555;">Kada pomisliš „Ne mogu više,“ a u stvari...(suicid)</span></strong></p>
+                                        <p style="text-align: center;"><strong><span style="font-family: roboto, sans-serif; color: #555555;">Sexting</span></strong></p>
+                                        <p style="text-align: center;"><strong><span style="font-family: roboto, sans-serif; color: #555555;">Moja porodica. I ja.</span></strong></p>
+                                        <p style="text-align: center;"><strong><span style="font-family: roboto, sans-serif; color: #555555;">Nasilje u vezi</span></strong></p>
+                                        <p style="text-align: center;"><strong><span style="font-family: roboto, sans-serif; color: #555555;">Trudnoća...</span></strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ddr-page-column ddr-page-column-1 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " style="width: 50%;">
+                            <div id="ddr-5d1e8dff33" class="ddr-page-widget ddr-page-widget__image ddr-page-widget-0 ">
+                                <div class="ddr-widget">
+                                    <div class="ddr-widget__image" style="justify-content: center;"><a target="_self" style="width: 371px; height: auto;"><img data-blink-src="https://cdn.dragdropr.com/096b699b-eadd-446f-bd03-5628f4e8175f/" style="height: auto; width: 371px;"></a>
+                                        <div class="ddr-hot-spots__items-wrapper"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </body>
+</html>
+
+
+
+  </body>
+</html>

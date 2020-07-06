@@ -20,4 +20,10 @@ a { color: #464646; }
 
 body { font-family: 'Roboto', sans-serif; margin: 0; }
 
+.hero-container { display: flex; justify-content: space-around; border: thin solid grey; margin: 10px; }
+
+.hero-speech { margin-top: 50px; margin-left: 20px; padding: 20px; }
+
+.hero-image { width: 30%; }
+
 /*# sourceMappingURL=styles.css.map */

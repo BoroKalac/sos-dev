@@ -1,0 +1,27 @@
+.top-header {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #008c99;
+  color: #fff;
+  
+  .top-header-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+    
+  .top-header-list li {
+    margin-left: 10px;
+    margin-right: 10px;
+    white-space: nowrap;
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  a > i {
+    margin-right: 10px;
+  }
+}

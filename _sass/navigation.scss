@@ -10,6 +10,7 @@
 
     a:link {
       text-decoration: none;
+      line-height: normal;
     }
   }
   
@@ -43,7 +44,7 @@
     display: none;
   }
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 825px) {
     .navigation-top a {display: none;}
     .navigation-top a.icon {
       display: flex;

@@ -5,7 +5,11 @@ title: Ja mogu da pričam o svemu
 <html>
     <body>
         {% include dnd/scena-5.html %}
-        {% include hero-buttons.html %}
+        <div class="scene-button-container">
+            <a href="#" target="_self"><button type="button" class="choose-hero-button hero-5-button">DA</button></a>
+            <a href="#" target="_self"><button type="button" class="choose-hero-button hero-5-button">NE</button></a>
+            <a href="/6-12.html#slide5" target="_self"><button type="button" class="choose-hero-button hero-5-button">Izaberi drugog heroja</button></a>
+        </div>
     </body>
 </html>
 

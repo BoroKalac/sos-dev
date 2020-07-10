@@ -5,7 +5,11 @@ title: Ja mogu da bude jak
 <html>
     <body>
         {% include dnd/scena-2.html %}
-        {% include hero-buttons.html %}
+        <div class="scene-button-container">
+            <a href="#" target="_self"><button type="button" class="choose-hero-button hero-2-button">DA</button></a>
+            <a href="#" target="_self"><button type="button" class="choose-hero-button hero-2-button">NE</button></a>
+            <a href="/6-12.html#slide2" target="_self"><button type="button" class="choose-hero-button hero-2-button">Izaberi drugog heroja</button></a>
+        </div>
     </body>
 </html>
 

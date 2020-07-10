@@ -595,29 +595,50 @@
 </div>
         <div class="hero-container">
             <h1>Izaberi svog heroja</h1>
-            <div>
-                <ul class="thumbnails">
-                    <li>Ja mogu da kažem ne<a href="#slide1"><img src="assets/images/hero-1.png" onmouseover="this.src='/assets/images/hero-showing-1.png';" onmouseout="this.src='assets/images/hero-1.png';"/></a></li>
-                    <li>Ja mogu da budem jak<a href="#slide2"><img src="assets/images/hero-2.png" onmouseover="this.src='/assets/images/hero-showing-2.png';" onmouseout="this.src='assets/images/hero-2.png';"/></a></li>
-                    <li>Ja mogu da pomognem<a href="#slide3"><img src="assets/images/hero-3.png" onmouseover="this.src='/assets/images/hero-showing-3.png';" onmouseout="this.src='assets/images/hero-3.png';"/></a></li>
-                    <li>Ja mogu da budem OK<a href="#slide4"><img src="assets/images/hero-4.png" onmouseover="this.src='/assets/images/hero-showing-4.png';" onmouseout="this.src='assets/images/hero-4.png';"/></a></li>
-                    <li>Ja mogu da pričam o svemu<a href="#slide5"><img src="assets/images/hero-5.png" onmouseover="this.src='/assets/images/hero-showing-5.png';" onmouseout="this.src='assets/images/hero-5.png';"/></a></li>
+            <div class="slides-container">
+                <ul class="slides"><img id="hero" src="assets/images/hero.png" alt="" />
+                    <li id="slide1"><img src="assets/images/hero-1.png" alt="" /><a href="/scena-1.html" target="_self"><button type="button" class="choose-hero-button hero-1-button">Izaberi mene</button></a></li>
+                    <li id="slide2"><img src="assets/images/hero-2.png" alt="" /><a href="/scena-2.html" target="_self"><button type="button" class="choose-hero-button hero-2-button">Izaberi mene</button></a></li>
+                    <li id="slide3"><img src="assets/images/hero-3.png" alt="" /><a href="/scena-3.html" target="_self"><button type="button" class="choose-hero-button hero-3-button">Izaberi mene</button></a></li>
+                    <li id="slide4"><img src="assets/images/hero-4.png" alt="" /><a href="/scena-4.html" target="_self"><button type="button" class="choose-hero-button hero-4-button">Izaberi mene</button></a></li>
+                    <li id="slide5"><img src="assets/images/hero-5.png" alt="" /><a href="/scena-5.html" target="_self"><button type="button" class="choose-hero-button hero-5-button">Izaberi mene</button></a></li>
                 </ul>
             </div>
-            <div class="slides-container">
-                <ul class="slides">
-                    <li id="slide1"><img src="assets/images/hero-1.png" alt="" /><a href="/scena-1.html" target="_self"><button type="button" class="choose-hero-button">Izaberi mene</button></a></li>
-                    <li id="slide2"><img src="assets/images/hero-2.png" alt="" /><a href="/scena-2.html" target="_self"><button type="button" class="choose-hero-button">Izaberi mene</button></a></li>
-                    <li id="slide3"><img src="assets/images/hero-3.png" alt="" /><a href="/scena-3.html" target="_self"><button type="button" class="choose-hero-button">Izaberi mene</button></a></li>
-                    <li id="slide4"><img src="assets/images/hero-4.png" alt="" /><a href="/scena-4.html" target="_self"><button type="button" class="choose-hero-button">Izaberi mene</button></a></li>
-                    <li id="slide5"><img src="assets/images/hero-5.png" alt="" /><a href="/scena-5.html" target="_self"><button type="button" class="choose-hero-button">Izaberi mene</button></a></li>
+            <div id="thumbnailContainer">
+                <ul class="thumbnails">
+                    <li><a href="#slide1"><img src="assets/images/hero-1.png" onmouseover="this.src='/assets/images/hero-showing-1.png';" onmouseout="this.src='assets/images/hero-1.png';"/></a>Ja mogu da kažem ne</li>
+                    <li><a href="#slide2"><img src="assets/images/hero-2.png" onmouseover="this.src='/assets/images/hero-showing-2.png';" onmouseout="this.src='assets/images/hero-2.png';"/></a>Ja mogu da budem jak</li>
+                    <li><a href="#slide3"><img src="assets/images/hero-3.png" onmouseover="this.src='/assets/images/hero-showing-3.png';" onmouseout="this.src='assets/images/hero-3.png';"/></a>Ja mogu da pomognem</li>
+                    <li><a href="#slide4"><img src="assets/images/hero-4.png" onmouseover="this.src='/assets/images/hero-showing-4.png';" onmouseout="this.src='assets/images/hero-4.png';"/></a>Ja mogu da budem OK</li>
+                    <li><a href="#slide5"><img src="assets/images/hero-5.png" onmouseover="this.src='/assets/images/hero-showing-5.png';" onmouseout="this.src='assets/images/hero-5.png';"/></a>Ja mogu da pričam o svemu</li>
                 </ul>
             </div>
         </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var url = window.location.href;
+                var me = this;
+
+                if (url.includes("#slide")) {
+                    hidePlaceholderHero();
+                } else {
+                    return;
+                };
+
+            }, false);
+
+            var img = document.getElementById("thumbnailContainer").getElementsByTagName('li');
+                for (var i = 0; i < img.length; i++) {
+                    img[i].addEventListener('click', hidePlaceholderHero, false);
+                    };
+
+            function hidePlaceholderHero() {
+                target =  document.getElementById("hero");
+                target.style.display = 'none';
+            };
+        </script>
     </body>
 </html>
-
-
     <footer class="footer-container">
     <section class="footer-main">
         <div class="footer-main-item">
@@ -654,5 +675,9 @@
         </ul>
     </section>
 </footer>
+    <div class="hide-site">
+    <a href="https://google.com" target="_self" rel="noopener noreferrer">Izađi</a>
+    </span><i class="fas fa-sign-out-alt" aria-hidden="true"></i></span>
+</div>
   </body>
 </html>

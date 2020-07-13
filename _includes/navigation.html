@@ -1,10 +1,15 @@
 <nav class="navigation-top" id="navigationTop">
-  {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" {% if page.url == item.link %}class="menu-item-active"{% endif %}>
-      {{ item.name }}
+  <div class="logo-container">
+    <a href="/"><img src="assets/images/Logo-nadel.png" alt=""></a>
+  </div>
+  <div class="list-container">
+    {% for item in site.data.navigation %}
+      <a href="{{ item.link }}" {% if page.url == item.link %} class="menu-item-active"{% endif %}>
+        {{ item.name }}
+      </a>
+    {% endfor %}
+      <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+        <i class="fa fa-bars"></i>
     </a>
-  {% endfor %}
-    <a href="javascript:void(0);" class="icon" onclick="navFunction()">
-      <i class="fa fa-bars"></i>
-  </a>
+  </div>
 </nav>

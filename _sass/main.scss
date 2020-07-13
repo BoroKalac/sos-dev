@@ -144,86 +144,183 @@ body {
 .choose-hero-button {
   pointer-events: all;
   padding: 10px 40px;
-  
-  color: #fff;
   border-radius: 92px;
   font-size: 18px;
   cursor: pointer;
-
-  &:hover {
-    background-color: #fff;
-    outline: none;
-  }
-
+  border: none;
+  border-radius: 25px;
+  color: snow;
+  outline: none;
+  position: relative;
+  
   &:focus {
     outline: none;
   }
-}
 
-.scene-button-container {
-  text-align: center;
-  margin-bottom: 60px;
+  &::before {
+    animation: glow 2s ease-in infinite;
+    border-radius: inherit;
+    content: '';
+    filter: blur(10px);
+    opacity: .75;
+    position: absolute;
+    transition: all .6s ease-in-out;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+  &:hover::before {
+    filter: blur(20px);
+    opacity: 1;
+  }
 }
 
 .hero-1-button {
-  border: 1px solid orange;
-  background-color: orange;
-  
+  background: orange;
+
   &:hover {
-    color: orange;
+    animation: glow-orange 2s ease-in infinite;
+  }
+
+  &::before {
+    background: orange;  
+  }
+
+  @keyframes glow-orange {
+    0% {
+      background: orange;
+    }
+    25% {
+      background: rgb(245, 209, 143);
+    }
+    100% {
+      background: orange;
+    }
   }
 }
 
 .hero-2-button {
-  border: 1px solid red;
-  background-color: red;
-  
+  background: red;
+
   &:hover {
-    color: red;
+    animation: glow-red 2s ease-in infinite;
+  }
+
+  &::before {
+    background: red;  
+  }
+
+  @keyframes glow-red {
+    0% {
+      background: red;
+    }
+    25% {
+      background: rgb(255, 132, 132);
+    }
+    100% {
+      background: red;
+    }
   }
 }
 
 .hero-3-button {
-  border: 1px solid #ffb901;
-  background-color: #ffb901;
-  
+  background: #ffb901;
+
   &:hover {
-    color: #ffb901;
+    animation: glow-yellow 2s ease-in infinite;
+  }
+
+  &::before {
+    background: #ffb901;  
+  }
+
+  @keyframes glow-yellow {
+    0% {
+      background: #ffb901;
+    }
+    25% {
+      background: #fad474;
+    }
+    100% {
+      background: #ffb901;
+    }
   }
 }
 
 .hero-4-button {
-  border: 1px solid purple;
   background-color: purple;
-  
+
   &:hover {
-    color: purple;
+    animation: glow-purple 2s ease-in infinite;
+  }
+  
+  &::before {
+    background: purple;  
+  }
+
+  @keyframes glow-purple {
+    0% {
+      background: purple;
+    }
+    25% {
+      background: rgb(248, 117, 248);
+    }
+    100% {
+      background: purple;
+    }
   }
 }
 
 .hero-5-button {
-  border: 1px solid green;
   background-color: green;
   
   &:hover {
-    color: green;
+    animation: glow-green 2s ease-in infinite;
+  }
+
+  &::before {
+    background: green;  
+  }
+
+  @keyframes glow-green {
+    0% {
+      background: green;
+    }
+    25% {
+      background: rgb(122, 252, 122);
+    }
+    100% {
+      background: green;
+    }
   }
 }
 
+.scene-button-container {
+
+  margin-top: 60px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
 .hide-site {
+  display: block;
   position: fixed;
   z-index: 5;
   top: 30%;
-  right: -30px;
+  right: -10px;
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
   font-size: 18px;
-  border: thick solid #008c99;
+  border: thin solid #008c99;
   padding: 8px 24px;
   border-radius: 92px;
   background-color: #008c99;
   color: white;
+  text-decoration: none;
 
   &:hover {
     background-color: white;
@@ -234,12 +331,22 @@ body {
     }
   }
 
-  a {
-    text-decoration: none;
-    color: white;
-
-    &:hover {
-      color: #008c99;
-    }
+  i {
+    padding-left: 5px;
   }
+}
+
+@media screen and (max-width: 500px) {
+  .hide-site {
+    font-size: 14px;
+    padding: 6px 20px;
+  }
+}
+
+.error-page {
+  display: grid;
+  place-items: center;
+  margin-top: 13em;
+  margin-bottom: 13em;
+  color: #555555;
 }

@@ -17,38 +17,43 @@
     </ul>
 </header>
     <nav class="navigation-top" id="navigationTop">
-  
-    <a href="/" >
-      Početna
+  <div class="logo-container">
+    <a href="/"><img src="assets/images/Logo-nadel.png" alt=""></a>
+  </div>
+  <div class="list-container">
+    
+      <a href="/" >
+        Početna
+      </a>
+    
+      <a href="/6-12.html"  class="menu-item-active">
+        Deca (6-12)
+      </a>
+    
+      <a href="/13-18.html" >
+        Tinejdžeri (13-18)
+      </a>
+    
+      <a href="/19-30.html" >
+        Mladi (19 i više)
+      </a>
+    
+      <a href="/roditelji.html" >
+        Roditelji
+      </a>
+    
+      <a href="/o-nadelu.html" >
+        O Nadelu
+      </a>
+    
+      <a href="/blog.html" >
+        Blog
+      </a>
+    
+      <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+        <i class="fa fa-bars"></i>
     </a>
-  
-    <a href="/6-12.html" class="menu-item-active">
-      Deca (6-12)
-    </a>
-  
-    <a href="/13-18.html" >
-      Tinejdžeri (13-18)
-    </a>
-  
-    <a href="/19-30.html" >
-      Mladi (19 i više)
-    </a>
-  
-    <a href="/roditelji.html" >
-      Roditelji
-    </a>
-  
-    <a href="/o-nadelu.html" >
-      O Nadelu
-    </a>
-  
-    <a href="/blog.html" >
-      Blog
-    </a>
-  
-    <a href="javascript:void(0);" class="icon" onclick="navFunction()">
-      <i class="fa fa-bars"></i>
-  </a>
+  </div>
 </nav>
     <html>
     <body>
@@ -406,14 +411,6 @@
         font-family: 'Roboto', sans-serif;
     }
 
-    undefined[data-ddr-page-widget-additional-css-id="a0483344bc"] {}
-
-    #ddr-rich-text-2200 * {
-        line-height: 1.1;
-    }
-
-    undefinedundefinedundefinedundefinedundefinedundefined[data-ddr-page-widget-additional-css-id="13804c8aad"] {}
-
     //
     -->
 </style>
@@ -530,14 +527,439 @@
                 </div>
             </div>
         </div>
-        <div id="ddr-dee66d9c08" class="ddr-page-section-wrapper ddr-page-section-wrapper-2" style="background-color: rgb(241, 241, 241);">
-            <div class="ddr-page-section-pre-content ddr-page-section-pre-content-2" style="max-width: 1300px; margin: auto;">
-                <div class="ddr-page-section ddr-page-section-2">
+    </div>
+</div>
+        <div class="hero-container">
+            <h1>Izaberi svog heroja</h1>
+            <div class="slides-container">
+                <ul class="slides"><img id="hero" src="assets/images/hero.png" alt="" />
+                    <li id="slide1"><img src="assets/images/hero-1.png" alt="" /><a href="/scena-1.html" target="_self"><button type="button" class="choose-hero-button hero-1-button">Izaberi mene</button></a></li>
+                    <li id="slide2"><img src="assets/images/hero-2.png" alt="" /><a href="/scena-2.html" target="_self"><button type="button" class="choose-hero-button hero-2-button">Izaberi mene</button></a></li>
+                    <li id="slide3"><img src="assets/images/hero-3.png" alt="" /><a href="/scena-3.html" target="_self"><button type="button" class="choose-hero-button hero-3-button">Izaberi mene</button></a></li>
+                    <li id="slide4"><img src="assets/images/hero-4.png" alt="" /><a href="/scena-4.html" target="_self"><button type="button" class="choose-hero-button hero-4-button">Izaberi mene</button></a></li>
+                    <li id="slide5"><img src="assets/images/hero-5.png" alt="" /><a href="/scena-5.html" target="_self"><button type="button" class="choose-hero-button hero-5-button">Izaberi mene</button></a></li>
+                </ul>
+            </div>
+            <div id="thumbnailContainer">
+                <ul class="thumbnails">
+                    <li><a href="#slide1"><img src="assets/images/hero-1.png" onmouseover="this.src='/assets/images/hero-showing-1.png';" onmouseout="this.src='assets/images/hero-1.png';"/></a>Ja mogu da kažem ne</li>
+                    <li><a href="#slide2"><img src="assets/images/hero-2.png" onmouseover="this.src='/assets/images/hero-showing-2.png';" onmouseout="this.src='assets/images/hero-2.png';"/></a>Ja mogu da budem jak</li>
+                    <li><a href="#slide3"><img src="assets/images/hero-3.png" onmouseover="this.src='/assets/images/hero-showing-3.png';" onmouseout="this.src='assets/images/hero-3.png';"/></a>Ja mogu da pomognem</li>
+                    <li><a href="#slide4"><img src="assets/images/hero-4.png" onmouseover="this.src='/assets/images/hero-showing-4.png';" onmouseout="this.src='assets/images/hero-4.png';"/></a>Ja mogu da budem OK</li>
+                    <li><a href="#slide5"><img src="assets/images/hero-5.png" onmouseover="this.src='/assets/images/hero-showing-5.png';" onmouseout="this.src='assets/images/hero-5.png';"/></a>Ja mogu da pričam o svemu</li>
+                </ul>
+            </div>
+        </div>
+        <style type="text/css">
+    <!--
+    @import url("https://fonts.googleapis.com/css?family=Roboto");
+
+    //
+    -->
+</style>
+<style type="text/css">
+    <!--
+    .ddr-page-wrapper * {
+        box-sizing: border-box;
+    }
+
+    .ddr-page-wrapper {
+        position: relative;
+        padding: 0px;
+        margin: 0px;
+        font-family: sans-serif;
+        font-size: 16px;
+    }
+
+    .ddr-page-wrapper .ddr-page {
+        position: relative;
+    }
+
+    .ddr-page-wrapper .ddr-page .ddr-page-section-pre-content::after,
+    .ddr-page-wrapper .ddr-page .ddr-page-section-pre-content::before,
+    .ddr-page-wrapper .ddr-page>div::after,
+    .ddr-page-wrapper .ddr-page>div::before {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .ddr-page-wrapper div,
+    .ddr-page-wrapper h1,
+    .ddr-page-wrapper h2,
+    .ddr-page-wrapper h3,
+    .ddr-page-wrapper h4,
+    .ddr-page-wrapper h5,
+    .ddr-page-wrapper h6,
+    .ddr-page-wrapper p,
+    .ddr-page-wrapper span {
+        line-height: normal;
+    }
+
+    .ddr-page-row,
+    .ddr-page-section-wrapper .ddr-page-section {
+        position: relative;
+        box-sizing: border-box;
+    }
+
+    .ddr-page-row {
+        display: flex;
+        width: 100%;
+    }
+
+    .ddr-page-row__wrap {
+        flex-wrap: wrap;
+    }
+
+    .ddr-page-row__wrap .ddr-page-column__wrap {
+        width: 100% !important;
+    }
+
+    .ddr-page-row__wrap-reverse {
+        flex-wrap: wrap-reverse;
+    }
+
+    .ddr-page-row__wrap-reverse .ddr-page-column__wrap-reverse {
+        width: 100% !important;
+    }
+
+    .ddr-page-column {
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        position: relative;
+        align-content: flex-start;
+    }
+
+    .ddr-page-widget {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .dashed-border {
+        border: 1px dashed rgb(135, 135, 135);
+    }
+
+    .headline-edit-wrapper {
+        cursor: text;
+    }
+
+    .section-slider .ddr-page-section-widget-drop-suggestion-wrapper {
+        padding-bottom: 7px;
+    }
+
+    .ddr-page-widget__sections-slider .toolbox-controls {
+        justify-content: flex-start !important;
+    }
+
+    .ddr-widget-toolbox--section-slider .toolbox-controls .ddr-widget-toolbox__sub-tool--duplicate,
+    .ddr-widget-toolbox--section-slider .toolbox-controls .ddr-widget-toolbox__tool--duplicate,
+    .ddr-widget-toolbox--section-slider .toolbox-controls .ddr-widget-toolbox__tool--move,
+    .ddr-widget-toolbox--section-slider .toolbox-controls .ddr-widget-toolbox__tool--settings {
+        background-color: rgb(226, 118, 37);
+    }
+
+    .ddr-widget-toolbox--section-slider .toolbox-controls .ddr-widget-toolbox__tool--delete {
+        background-color: rgb(72, 72, 72);
+    }
+
+    .ddr-widget-toolbox--section-slider .toolbox-controls .ddr-widget-toolbox__tool.ddr-widget-toolbox__tool--delete:hover {
+        background-color: rgb(58, 65, 74);
+    }
+
+    .ddr-widget-toolbox--section-slider .toolbox-controls .ddr-widget-toolbox__tool:hover {
+        background-color: rgb(239, 56, 27);
+    }
+
+    .ddr-page-widget-overlay-wrapper:hover .ddr-widget-toolbox--section-slider {
+        border: 2px solid rgb(226, 118, 37) !important;
+    }
+
+    .ddr-widget-toolbox--active.ddr-widget-toolbox--section-slider {
+        border: 2px solid rgb(226, 118, 37);
+    }
+
+    .ddr-widget {
+        background-color: transparent;
+        background-image: none;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        height: auto;
+        width: auto;
+        max-height: none;
+        max-width: none;
+        min-height: 0px;
+        min-width: 0px;
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+    }
+
+    .ddr-widget__rich-text {
+        position: relative;
+        cursor: auto;
+        overflow-wrap: break-word;
+        overflow: hidden;
+    }
+
+    .ddr-widget__image {
+        position: relative;
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+        display: flex;
+    }
+
+    .ddr-widget__image a,
+    .ddr-widget__image img {
+        overflow: hidden;
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .ddr-widget__image a,
+    .ddr-widget__image a:active,
+    .ddr-widget__image a:focus,
+    .ddr-widget__image a:hover,
+    .ddr-widget__image a:link,
+    .ddr-widget__image a:visited {
+        display: inline-block;
+        vertical-align: middle;
+        color: inherit;
+        text-decoration: none;
+        border: none;
+        box-shadow: none;
+    }
+
+    .ddr-widget__spacer {
+        position: relative;
+        overflow: hidden;
+    }
+
+    @media (min-width: 1281px) {
+        .ddr-page-row__wrap--max {
+            flex-wrap: wrap;
+        }
+
+        .ddr-page-row__wrap--max .ddr-page-column__wrap--max {
+            width: 100% !important;
+        }
+
+        .ddr-page-row__wrap-reverse--max {
+            flex-wrap: wrap-reverse;
+        }
+
+        .ddr-page-row__wrap-reverse--max .ddr-page-column__wrap-reverse--max {
+            width: 100% !important;
+        }
+
+        .ddr-page-column__hide--max,
+        .ddr-page-widget__hide--max {
+            display: none;
+        }
+    }
+
+    @media (max-width: 1280px) and (min-width: 1025px) {
+        .ddr-page-row__wrap--1280 {
+            flex-wrap: wrap;
+        }
+
+        .ddr-page-row__wrap--1280 .ddr-page-column__wrap--1280 {
+            width: 100% !important;
+        }
+
+        .ddr-page-row__wrap-reverse--1280 {
+            flex-wrap: wrap-reverse;
+        }
+
+        .ddr-page-row__wrap-reverse--1280 .ddr-page-column__wrap-reverse--1280 {
+            width: 100% !important;
+        }
+
+        .ddr-page-column__hide--1280,
+        .ddr-page-widget__hide--1280 {
+            display: none;
+        }
+    }
+
+    @media (max-width: 1024px) and (min-width: 769px) {
+        .ddr-page-row__wrap--1024 {
+            flex-wrap: wrap;
+        }
+
+        .ddr-page-row__wrap--1024 .ddr-page-column__wrap--1024 {
+            width: 100% !important;
+        }
+
+        .ddr-page-row__wrap-reverse--1024 {
+            flex-wrap: wrap-reverse;
+        }
+
+        .ddr-page-row__wrap-reverse--1024 .ddr-page-column__wrap-reverse--1024 {
+            width: 100% !important;
+        }
+
+        .ddr-page-column__hide--1024,
+        .ddr-page-widget__hide--1024 {
+            display: none;
+        }
+    }
+
+    @media (max-width: 768px) and (min-width: 481px) {
+        .ddr-page-row__wrap--768 {
+            flex-wrap: wrap;
+        }
+
+        .ddr-page-row__wrap--768 .ddr-page-column__wrap--768 {
+            width: 100% !important;
+        }
+
+        .ddr-page-row__wrap-reverse--768 {
+            flex-wrap: wrap-reverse;
+        }
+
+        .ddr-page-row__wrap-reverse--768 .ddr-page-column__wrap-reverse--768 {
+            width: 100% !important;
+        }
+
+        .ddr-page-column__hide--768,
+        .ddr-page-widget__hide--768 {
+            display: none;
+        }
+    }
+
+    @media (max-width: 480px) and (min-width: 321px) {
+        .ddr-page-row__wrap--480 {
+            flex-wrap: wrap;
+        }
+
+        .ddr-page-row__wrap--480 .ddr-page-column__wrap--480 {
+            width: 100% !important;
+        }
+
+        .ddr-page-row__wrap-reverse--480 {
+            flex-wrap: wrap-reverse;
+        }
+
+        .ddr-page-row__wrap-reverse--480 .ddr-page-column__wrap-reverse--480 {
+            width: 100% !important;
+        }
+
+        .ddr-page-column__hide--480,
+        .ddr-page-widget__hide--480 {
+            display: none;
+        }
+    }
+
+    @media (max-width: 320px) and (min-width: 0px) {
+        .ddr-page-row__wrap--320 {
+            flex-wrap: wrap;
+        }
+
+        .ddr-page-row__wrap--320 .ddr-page-column__wrap--320 {
+            width: 100% !important;
+        }
+
+        .ddr-page-row__wrap-reverse--320 {
+            flex-wrap: wrap-reverse;
+        }
+
+        .ddr-page-row__wrap-reverse--320 .ddr-page-column__wrap-reverse--320 {
+            width: 100% !important;
+        }
+
+        .ddr-page-column__hide--320,
+        .ddr-page-widget__hide--320 {
+            display: none;
+        }
+    }
+
+    #ddr-rich-text-000 * {
+        line-height: 1.5;
+    }
+
+    undefined[data-ddr-page-widget-additional-css-id="011dcb350a"] {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    undefined[data-ddr-page-widget-additional-css-id="a0483344bc"] {}
+
+    #ddr-rich-text-1200 * {
+        line-height: 1.1;
+    }
+
+    undefinedundefinedundefinedundefinedundefinedundefined[data-ddr-page-widget-additional-css-id="13804c8aad"] {}
+
+    //
+    -->
+</style>
+<script>
+    <!--
+    (function(src, cb) {
+        var s = document.createElement('script');
+        s.setAttribute('src', src);
+        s.onload = cb;
+        (document.head || document.body).appendChild(s);
+    })('https://ucarecdn.com/libs/blinkloader/3.x/blinkloader.min.js', function() {
+        window.Blinkloader.optimize({
+            pubkey: "7e7cb2191e43d9e6ba19",
+            fadeIn: true
+        });
+    });
+
+    //
+    -->
+</script>
+<script type="text/javascript">
+    <!--
+    (function() {
+        var head = document.getElementsByTagName('head').item(0),
+            url = 'https://app.dragdropr.com/components/dependency-manager.js?version=1.0.8';
+
+        for (var i = 0; i < head.children.length; i++) {
+            if (head.children.item(i).tagName === 'SCRIPT' && head.children.item(i).src.indexOf(url) !== -1) {
+                return;
+            }
+        }
+
+        var node = document.createElement('script');
+        node.async = 1;
+        node.src = url;
+        head.insertBefore(node, null);
+    })();
+
+    //
+    -->
+</script>
+<div class="ddr-page-wrapper" data-ddr-page-id="34e9d2a0-c4ef-11ea-af7a-0242ac140009">
+    <div class="ddr-page">
+        <div id="ddr-9bb9c4420b" class="ddr-page-section-wrapper ddr-page-section-wrapper-0" style="background-color: rgb(255, 255, 255); background-repeat: no-repeat; background-position: center center;">
+            <div class="ddr-page-section-pre-content ddr-page-section-pre-content-0" style="max-width: 1300px; margin: auto;">
+                <div class="ddr-page-section ddr-page-section-0" style="padding-left: 30px; padding-right: 30px;">
+                    <div class="ddr-page-row ddr-page-row-0 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768 ddr-page-row__wrap--1024">
+                        <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 ddr-page-column__wrap--1024 " style="width: 100%;">
+                            <div id="ddr-d54b4cf5b7" class="ddr-page-widget ddr-page-widget__rich-text ddr-page-widget-0 " data-ddr-page-widget-additional-css-id="011dcb350a">
+                                <div class="ddr-widget">
+                                    <div id="ddr-rich-text-000" class="ddr-widget__rich-text" style="margin: 0px; padding-left: 10px; padding-right: 10px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="ddr-dee66d9c08" class="ddr-page-section-wrapper ddr-page-section-wrapper-1" style="background-color: rgb(241, 241, 241);">
+            <div class="ddr-page-section-pre-content ddr-page-section-pre-content-1" style="max-width: 1300px; margin: auto;">
+                <div class="ddr-page-section ddr-page-section-1">
                     <div class="ddr-page-row ddr-page-row-0 ddr-page-row__wrap--320 ddr-page-row__wrap--480 ddr-page-row__wrap--768">
                         <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " style="width: 100%;">
                             <div id="ddr-28513d95dc" class="ddr-page-widget ddr-page-widget__rich-text ddr-page-widget-0 " data-ddr-page-widget-additional-css-id="a0483344bc">
                                 <div class="ddr-widget">
-                                    <div id="ddr-rich-text-2000" class="ddr-widget__rich-text" style="margin: 30px 30px 0px;">
+                                    <div id="ddr-rich-text-1000" class="ddr-widget__rich-text" style="margin: 30px 30px 0px;">
                                         <p style="text-align: center;"><span style="color: #555555; font-size: 24px;"><strong><span style="font-family: roboto, sans-serif;">Informacije i saveti</span></strong></span></p>
                                     </div>
                                 </div>
@@ -564,7 +986,7 @@
                         <div class="ddr-page-column ddr-page-column-0 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " style="width: 50%;">
                             <div id="ddr-b6f6a28a88" class="ddr-page-widget ddr-page-widget__rich-text ddr-page-widget-0 " data-ddr-page-widget-additional-css-id="13804c8aad">
                                 <div class="ddr-widget">
-                                    <div id="ddr-rich-text-2200" class="ddr-widget__rich-text" style="margin: 0px 30px 30px;">
+                                    <div id="ddr-rich-text-1200" class="ddr-widget__rich-text" style="margin: 0px 30px 30px;">
                                         <p style="text-align: center;"><span style="font-family: roboto, sans-serif; color: #555555;"><strong>Biram da ne moram – Šta je nasilje, zašto deca ne teba da trpe nasilje</strong></span></p>
                                         <p style="text-align: center;"><span style="font-family: roboto, sans-serif; color: #555555;"><strong>Isti a drugačiji – stereotipi, predrasude, diskriminacija – u školi, na treningu...</strong></span></p>
                                         <p style="text-align: center;"><span style="font-family: roboto, sans-serif; color: #555555;"><strong>Vršnjačko nasilje</strong></span></p>
@@ -581,7 +1003,7 @@
                         <div class="ddr-page-column ddr-page-column-1 ddr-page-column__wrap--320 ddr-page-column__wrap--480 ddr-page-column__wrap--768 " style="width: 50%;">
                             <div id="ddr-5d1e8dff33" class="ddr-page-widget ddr-page-widget__image ddr-page-widget-0 ">
                                 <div class="ddr-widget">
-                                    <div class="ddr-widget__image" style="justify-content: center;"><a target="_self" style="width: 371px; height: auto;"><img data-blink-src="https://cdn.dragdropr.com/096b699b-eadd-446f-bd03-5628f4e8175f/" style="height: auto; width: 371px;"></a>
+                                    <div class="ddr-widget__image" style="justify-content: center;"><a target="_self" style="width: 674px; height: auto;"><img data-blink-src="https://cdn.dragdropr.com/309b9720-b96e-4e43-b532-21e1d0c9600f/" style="height: auto; width: 674px;"></a>
                                         <div class="ddr-hot-spots__items-wrapper"></div>
                                     </div>
                                 </div>
@@ -593,27 +1015,6 @@
         </div>
     </div>
 </div>
-        <div class="hero-container">
-            <h1>Izaberi svog heroja</h1>
-            <div class="slides-container">
-                <ul class="slides"><img id="hero" src="assets/images/hero.png" alt="" />
-                    <li id="slide1"><img src="assets/images/hero-1.png" alt="" /><a href="/scena-1.html" target="_self"><button type="button" class="choose-hero-button hero-1-button">Izaberi mene</button></a></li>
-                    <li id="slide2"><img src="assets/images/hero-2.png" alt="" /><a href="/scena-2.html" target="_self"><button type="button" class="choose-hero-button hero-2-button">Izaberi mene</button></a></li>
-                    <li id="slide3"><img src="assets/images/hero-3.png" alt="" /><a href="/scena-3.html" target="_self"><button type="button" class="choose-hero-button hero-3-button">Izaberi mene</button></a></li>
-                    <li id="slide4"><img src="assets/images/hero-4.png" alt="" /><a href="/scena-4.html" target="_self"><button type="button" class="choose-hero-button hero-4-button">Izaberi mene</button></a></li>
-                    <li id="slide5"><img src="assets/images/hero-5.png" alt="" /><a href="/scena-5.html" target="_self"><button type="button" class="choose-hero-button hero-5-button">Izaberi mene</button></a></li>
-                </ul>
-            </div>
-            <div id="thumbnailContainer">
-                <ul class="thumbnails">
-                    <li><a href="#slide1"><img src="assets/images/hero-1.png" onmouseover="this.src='/assets/images/hero-showing-1.png';" onmouseout="this.src='assets/images/hero-1.png';"/></a>Ja mogu da kažem ne</li>
-                    <li><a href="#slide2"><img src="assets/images/hero-2.png" onmouseover="this.src='/assets/images/hero-showing-2.png';" onmouseout="this.src='assets/images/hero-2.png';"/></a>Ja mogu da budem jak</li>
-                    <li><a href="#slide3"><img src="assets/images/hero-3.png" onmouseover="this.src='/assets/images/hero-showing-3.png';" onmouseout="this.src='assets/images/hero-3.png';"/></a>Ja mogu da pomognem</li>
-                    <li><a href="#slide4"><img src="assets/images/hero-4.png" onmouseover="this.src='/assets/images/hero-showing-4.png';" onmouseout="this.src='assets/images/hero-4.png';"/></a>Ja mogu da budem OK</li>
-                    <li><a href="#slide5"><img src="assets/images/hero-5.png" onmouseover="this.src='/assets/images/hero-showing-5.png';" onmouseout="this.src='assets/images/hero-5.png';"/></a>Ja mogu da pričam o svemu</li>
-                </ul>
-            </div>
-        </div>
         <script>
             document.addEventListener('DOMContentLoaded', function() {
                 var url = window.location.href;
@@ -670,14 +1071,12 @@
     </section>
     <section class="footer-legal">
         <ul class="footer-legal-list">
-            <li><a href="#">Politika privatnosti</a></li>
+            <!-- <li><a href="#">Politika privatnosti</a></li> -->
             <li>&copy; 2020 Sipod Digital. All Rights Reserved.</li>
         </ul>
     </section>
 </footer>
-    <div class="hide-site">
-    <a href="https://google.com" target="_self" rel="noopener noreferrer">Izađi</a>
-    </span><i class="fas fa-sign-out-alt" aria-hidden="true"></i></span>
-</div>
+    <!-- <div class="hide-site"> -->
+    <a class="hide-site" href="https://google.com" target="_self" rel="noopener noreferrer">Izađi</span><i class="fas fa-sign-out-alt" aria-hidden="true"></i></span></a>
   </body>
 </html>

@@ -8,25 +8,35 @@
 
 .top-header a > i { margin-right: 10px; }
 
-.navigation-top { position: sticky; display: flex; flex-wrap: nowrap; justify-content: center; padding-top: 10px; padding-bottom: 10px; border-top: thin solid darkgrey; border-bottom: thin solid darkgrey; }
+.navigation-top { position: sticky; display: flex; flex-wrap: nowrap; justify-content: center; border-top: thin solid darkgrey; border-bottom: thin solid darkgrey; align-items: center; }
 
 .navigation-top a:link { text-decoration: none; line-height: normal; }
 
+.navigation-top img { height: 70px; }
+
+.navigation-top .logo-container { padding-left: 40px; display: flex; flex-grow: 1; }
+
+.navigation-top .logo-container a { text-decoration: none; }
+
+.navigation-top .logo-container a:hover { text-decoration: none; }
+
+.navigation-top .list-container { display: flex; flex-grow: 1.5; }
+
 a { color: #464646; }
 
-.navigation-top a { width: auto; padding: 10px; text-align: center; line-height: 50px; font-size: 20px; font-weight: normal; }
+.navigation-top a { width: auto; padding-left: 10px; padding-right: 10px; text-align: center; line-height: 50px; font-size: 20px; font-weight: normal; }
 
 .menu-item-active { color: #26c7cc; }
 
 .navigation-top { overflow: hidden; }
 
-.navigation-top a:hover { color: #26c7cc; border-bottom: thin solid grey; }
+.navigation-top a:hover { color: #26c7cc; }
 
 .navigation-top .icon { display: none; }
 
-@media screen and (max-width: 825px) { .navigation-top a { display: none; } .navigation-top a.icon { display: flex; } }
+@media screen and (max-width: 825px) { .navigation-top a { display: none; } .navigation-top a.icon { display: block; text-align: center; margin: 20px; } .logo-container { display: none; } }
 
-@media screen and (max-width: 600px) { .navigation-top.responsive { position: relative; display: block; } .navigation-top.responsive a.icon { position: absolute; right: 0; top: 0; } .navigation-top.responsive a { display: block; } }
+@media screen and (max-width: 825px) { .navigation-top { display: block; } .navigation-top.responsive .list-container { position: relative; display: block; } .navigation-top.responsive .list-container a { margin-top: 15px; margin-bottom: 15px; } .navigation-top img { display: none; } .navigation-top.responsive a.icon { position: absolute; right: 0; top: 0; } .navigation-top.responsive a { display: block; } }
 
 body { font-family: 'Roboto', sans-serif; margin: 0; }
 
@@ -74,43 +84,77 @@ body { font-family: 'Roboto', sans-serif; margin: 0; }
 @keyframes hidden { 0% { z-index: 2; }
   100% { z-index: 2; } }
 
-.choose-hero-button { pointer-events: all; padding: 10px 40px; color: #fff; border-radius: 92px; font-size: 18px; cursor: pointer; }
-
-.choose-hero-button:hover { background-color: #fff; outline: none; }
+.choose-hero-button { pointer-events: all; padding: 10px 40px; border-radius: 92px; font-size: 18px; cursor: pointer; border: none; border-radius: 25px; color: snow; outline: none; position: relative; }
 
 .choose-hero-button:focus { outline: none; }
 
-.scene-button-container { text-align: center; margin-bottom: 60px; }
+.choose-hero-button::before { animation: glow 2s ease-in infinite; border-radius: inherit; content: ''; filter: blur(10px); opacity: .75; position: absolute; transition: all .6s ease-in-out; width: 100%; height: 100%; top: 0; right: 0; z-index: -1; }
 
-.hero-1-button { border: 1px solid orange; background-color: orange; }
+.choose-hero-button:hover::before { filter: blur(20px); opacity: 1; }
 
-.hero-1-button:hover { color: orange; }
+.hero-1-button { background: orange; }
 
-.hero-2-button { border: 1px solid red; background-color: red; }
+.hero-1-button:hover { animation: glow-orange 2s ease-in infinite; }
 
-.hero-2-button:hover { color: red; }
+.hero-1-button::before { background: orange; }
 
-.hero-3-button { border: 1px solid #ffb901; background-color: #ffb901; }
+@keyframes glow-orange { 0% { background: orange; }
+  25% { background: #f5d18f; }
+  100% { background: orange; } }
 
-.hero-3-button:hover { color: #ffb901; }
+.hero-2-button { background: red; }
 
-.hero-4-button { border: 1px solid purple; background-color: purple; }
+.hero-2-button:hover { animation: glow-red 2s ease-in infinite; }
 
-.hero-4-button:hover { color: purple; }
+.hero-2-button::before { background: red; }
 
-.hero-5-button { border: 1px solid green; background-color: green; }
+@keyframes glow-red { 0% { background: red; }
+  25% { background: #ff8484; }
+  100% { background: red; } }
 
-.hero-5-button:hover { color: green; }
+.hero-3-button { background: #ffb901; }
 
-.hide-site { position: fixed; z-index: 5; top: 30%; right: -30px; -webkit-transform: rotate(-90deg); -ms-transform: rotate(-90deg); transform: rotate(-90deg); font-size: 18px; border: thick solid #008c99; padding: 8px 24px; border-radius: 92px; background-color: #008c99; color: white; }
+.hero-3-button:hover { animation: glow-yellow 2s ease-in infinite; }
+
+.hero-3-button::before { background: #ffb901; }
+
+@keyframes glow-yellow { 0% { background: #ffb901; }
+  25% { background: #fad474; }
+  100% { background: #ffb901; } }
+
+.hero-4-button { background-color: purple; }
+
+.hero-4-button:hover { animation: glow-purple 2s ease-in infinite; }
+
+.hero-4-button::before { background: purple; }
+
+@keyframes glow-purple { 0% { background: purple; }
+  25% { background: #f875f8; }
+  100% { background: purple; } }
+
+.hero-5-button { background-color: green; }
+
+.hero-5-button:hover { animation: glow-green 2s ease-in infinite; }
+
+.hero-5-button::before { background: green; }
+
+@keyframes glow-green { 0% { background: green; }
+  25% { background: #7afc7a; }
+  100% { background: green; } }
+
+.scene-button-container { margin-top: 60px; text-align: center; margin-bottom: 60px; }
+
+.hide-site { display: block; position: fixed; z-index: 5; top: 30%; right: -10px; -webkit-transform: rotate(-90deg); -ms-transform: rotate(-90deg); transform: rotate(-90deg); font-size: 18px; border: thin solid #008c99; padding: 8px 24px; border-radius: 92px; background-color: #008c99; color: white; text-decoration: none; }
 
 .hide-site:hover { background-color: white; color: #008c99; }
 
 .hide-site:hover a { color: #008c99; }
 
-.hide-site a { text-decoration: none; color: white; }
+.hide-site i { padding-left: 5px; }
 
-.hide-site a:hover { color: #008c99; }
+@media screen and (max-width: 500px) { .hide-site { font-size: 14px; padding: 6px 20px; } }
+
+.error-page { display: grid; place-items: center; margin-top: 13em; margin-bottom: 13em; color: #555555; }
 
 .footer-container { box-sizing: border-box; font-family: "Roboto", sans-serif; margin: 0; padding: 0; background-color: #008c99; color: #bbb; line-height: 1.5; color: #bbb; line-height: 1.5; }
 

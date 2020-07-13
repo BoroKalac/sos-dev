@@ -1,18 +1,40 @@
 .navigation-top {
-    position: sticky;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-top: thin solid darkgrey;
-    border-bottom: thin solid darkgrey;
+  position: sticky;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  border-top: thin solid darkgrey;
+  border-bottom: thin solid darkgrey;
+  align-items: center;
 
-    a:link {
+  a:link {
+    text-decoration: none;
+    line-height: normal;
+  }
+
+  img {
+    height: 70px;
+  }
+
+  .logo-container {
+    padding-left: 40px;
+    display: flex;
+    flex-grow: 1;
+
+    a {
       text-decoration: none;
-      line-height: normal;
+    }
+
+    a:hover {
+      text-decoration: none;
     }
   }
+
+  .list-container {
+    display: flex;
+    flex-grow: 1.5;
+  }
+}
   
   a {
     color: #464646;
@@ -20,7 +42,8 @@
 
   .navigation-top a {
     width: auto;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     text-align: center;
     line-height: 50px;
     font-size: 20px;
@@ -37,7 +60,6 @@
   
   .navigation-top a:hover {
     color: #26c7cc;
-    border-bottom: thin solid grey;
   }
   
   .navigation-top .icon {
@@ -47,15 +69,34 @@
   @media screen and (max-width: 825px) {
     .navigation-top a {display: none;}
     .navigation-top a.icon {
-      display: flex;
+      display: block;
+      text-align: center;
+      margin: 20px;
+    }
+    .logo-container {
+      display: none;
     }
   }
   
-  @media screen and (max-width: 600px) {
-    .navigation-top.responsive {
-      position: relative;
+  @media screen and (max-width: 825px) {
+    .navigation-top {
       display: block;
     }
+
+    .navigation-top.responsive .list-container {
+      position: relative;
+      display: block;
+
+      a {
+        margin-top: 15px;
+        margin-bottom: 15px;
+      } 
+    }
+
+    .navigation-top img {
+      display: none;
+    }
+
     .navigation-top.responsive a.icon {
       position: absolute;
       right: 0;

@@ -178,7 +178,7 @@ body { font-family: 'Roboto', sans-serif; margin: 0; }
 
 .footer-container .footer-social-list { display: flex; justify-content: center; border-top: 1px #555 solid; padding-top: 1.25rem; }
 
-.footer-container .footer-social-list li { margin: 0.5rem; font-size: 1.25rem; }
+.footer-container .footer-social-list li { font-size: 1.50rem; }
 
 .footer-container .footer-legal { padding: 0.9375rem 1.875rem; background-color: #333; }
 

@@ -42,7 +42,7 @@ body { font-family: 'Roboto', sans-serif; margin: 0; }
 
 .hero-container { display: flex; max-width: 1300px; margin: auto; -webkit-box-pack: center; justify-content: center; padding-top: 30px; padding-bottom: 30px; flex-direction: column; }
 
-.hero-container h1 { color: #555; margin-top: 30px; }
+.hero-container h1 { color: #555; margin-top: 30px; margin-bottom: 20px; font-family: 'Rowdies', cursive; }
 
 .hero-container *, .hero-container *::before, .hero-container *::after { box-sizing: inherit; margin: 0; padding: 0; text-align: center; }
 
@@ -58,13 +58,19 @@ body { font-family: 'Roboto', sans-serif; margin: 0; }
 
 .slides-container { margin-bottom: 60px; }
 
+.hero-ability-container, .special-ability-container { line-height: 2; padding-top: 20px; }
+
+.hero-ability-container .hero-ability, .special-ability-container .hero-ability { display: flex; white-space: pre; font-family: 'Rowdies', cursive; }
+
+.hero-ability-container .hero-ability img, .special-ability-container .hero-ability img { width: 30px; height: 30px; padding-right: 15px; padding-bottom: 10px; }
+
 .slides { overflow: hidden; width: 50vmin; height: 60vmin; margin: auto; }
 
 .slides li { width: 50vmin; height: 60vmin; position: absolute; z-index: 1; }
 
 .slides img { height: 60vmin; -o-object-fit: cover; object-fit: cover; -o-object-position: top; object-position: top; }
 
-.slides li:target { z-index: 3; -webkit-animation: slide 1s 1; pointer-events: none; }
+.slides li:target { z-index: 3; -webkit-animation: slide 1s 1; pointer-events: none; display: flex; justify-content: center; }
 
 .slides li:not(:target) { -webkit-animation: hidden 1s 1; display: none; }
 
@@ -84,11 +90,9 @@ body { font-family: 'Roboto', sans-serif; margin: 0; }
 @keyframes hidden { 0% { z-index: 2; }
   100% { z-index: 2; } }
 
-.choose-hero-button { pointer-events: all; padding: 10px 40px; border-radius: 92px; font-size: 18px; cursor: pointer; border: none; border-radius: 25px; color: snow; outline: none; position: relative; }
+.choose-hero-button { pointer-events: all; padding: 10px 40px; border-radius: 92px; font-size: 18px; cursor: pointer; border: none; border-radius: 25px; color: snow; outline: none; }
 
 .choose-hero-button:focus { outline: none; }
-
-.choose-hero-button::before { animation: glow 2s ease-in infinite; border-radius: inherit; content: ''; filter: blur(10px); opacity: .75; position: absolute; transition: all .6s ease-in-out; width: 100%; height: 100%; top: 0; right: 0; z-index: -1; }
 
 .choose-hero-button:hover::before { filter: blur(20px); opacity: 1; }
 

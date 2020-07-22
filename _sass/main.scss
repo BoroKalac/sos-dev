@@ -4,14 +4,18 @@ body {
 }
 
 .hero-container {
+  font-family: 'Rowdies', cursive;
   display: flex;
-  max-width: 1300px;
+  // /max-width: 1300px;
   margin: auto;
   -webkit-box-pack: center;
   justify-content: center;
   padding-top: 30px;
   padding-bottom: 30px;
   flex-direction: column;
+  background-image: url('#{$baseurl}/assets/images/bg.png');
+  background-position: center;
+  background-size: cover;
 
   h1 {
     color: #555;
@@ -46,7 +50,7 @@ body {
 .thumbnails li {
   -webkit-box-flex: 1;
   flex: auto;
-  padding-top: 10px;
+  //padding-top: 10px;
   text-align: center;
   font-weight: bold;
   line-height: normal;
@@ -117,40 +121,49 @@ body {
 
 .slides li:target {
   z-index: 3;
-  -webkit-animation: slide 1s 1;
+  -webkit-animation: pop 1s 1;
+  animation: pop 1s 1;
   pointer-events: none;
   display: flex;
   justify-content: center;
 }
-
-
 
 .slides li:not(:target) {
   -webkit-animation: hidden 1s 1;
   display: none;
 }
 
-@-webkit-keyframes slide {
-  0% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+// @-webkit-keyframes pop {
+//   0% {
+//     -webkit-transform: translateX(-100%);
+//             transform: translateX(-100%);
+//   }
+//   100% {
+//     -webkit-transform: translateX(0%);
+//             transform: translateX(0%);
+//   }
+// }
+
+// @keyframes pop {
+//   0% {
+//     -webkit-transform: translateX(-100%);
+//             transform: translateX(-100%);
+//   }
+//   100% {
+//     -webkit-transform: translateX(0%);
+//             transform: translateX(0%);
+//   }
+// }
+
+@keyframes pop {
+  0%   {
+    transform: scale(1);
   }
   100% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    transform: scale(1.5);
   }
 }
 
-@keyframes slide {
-  0% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  100% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-}
 @-webkit-keyframes hidden {
   0% {
     z-index: 2;
@@ -178,28 +191,10 @@ body {
   border-radius: 25px;
   color: snow;
   outline: none;
-  //position: relative;
-  //top: 50%;
-  //position: absolute;
   
   &:focus {
     outline: none;
   }
-
-  // &::before {
-  //   animation: glow 2s ease-in infinite;
-  //   border-radius: inherit;
-  //   content: '';
-  //   filter: blur(10px);
-  //   opacity: .75;
-  //   //position: absolute;
-  //   transition: all .6s ease-in-out;
-  //   width: 100%;
-  //   height: 100%;
-  //   top: 0;
-  //   right: 0;
-  //   z-index: -1;
-  // }
 
   &:hover::before {
     filter: blur(20px);
@@ -379,3 +374,4 @@ body {
   margin-bottom: 13em;
   color: #555555;
 }
+

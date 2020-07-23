@@ -50,7 +50,6 @@ body {
 .thumbnails li {
   -webkit-box-flex: 1;
   flex: auto;
-  //padding-top: 10px;
   text-align: center;
   font-weight: bold;
   line-height: normal;
@@ -68,6 +67,10 @@ body {
   -o-object-position: top;
   object-position: top;
   padding: 10px;
+}
+
+.highlight-hero {
+  border: thick solid red;
 }
 
 .slides-container {
@@ -126,6 +129,7 @@ body {
   pointer-events: none;
   display: flex;
   justify-content: center;
+
 }
 
 .slides li:not(:target) {
@@ -334,7 +338,7 @@ body {
   position: fixed;
   z-index: 5;
   top: 30%;
-  right: -10px;
+  right: -30px;
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);

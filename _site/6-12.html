@@ -56,6 +56,12 @@
     </a>
   </div>
 </nav>
+    <div class="banner-container">
+    <span>
+        <h3>SOS chat</h3>
+        <p>je usluga koja svoj deci i mladim ljudima u Srbiji omogućava da u bilo kom trenutku dobiju savetodavnu podršku putem besplatnog chat-a sa našim savetnicima, ukoliko se nađu u okolnostima u kojima su im ugrožena prava, ili u bilo kojoj drugoj situaciji, kada osete potrebu za razgovorom sa kompetentnom i poverljivom osobom.</p>
+    </span>
+</div>
     <html>
     <body>
         <style type="text/css">
@@ -490,7 +496,7 @@
                             <div id="ddr-5ed0b32707" class="ddr-page-widget ddr-page-widget__rich-text ddr-page-widget-0 " data-ddr-page-widget-additional-css-id="0611f50935">
                                 <div class="ddr-widget">
                                     <div id="ddr-rich-text-200" class="ddr-widget__rich-text" style="margin: 0px; padding-left: 10px; padding-right: 10px;">
-                                        <p><span style="font-family: roboto, sans-serif; color: #555555;"><span style="font-weight: 400;"><strong>Za savete i pomoć za našu hrabru decu, tu je specijalni tim heroja (psihologa...) koji će ti pomoći da lakše progovoriš o svom problemu i, još važnije, pomoći će ti da potrražiš rešenje. Ako pogledaš malo bolje, ovi heroji pomalo liče i na tebe, zar ne?</strong></span></span></p>
+                                        <p><span style="font-family: roboto, sans-serif; color: #555555;"><span style="font-weight: 400;"><strong>Za savete i pomoć za našu hrabru decu, tu je specijalni tim heroja (savetnika...) koji će ti pomoći da lakše progovoriš o svom problemu i, još važnije, pomoći će ti da potrražiš rešenje. Ako pogledaš malo bolje, ovi heroji pomalo liče i na tebe, zar ne?</strong></span></span></p>
                                     </div>
                                 </div>
                             </div>
@@ -651,32 +657,37 @@
                     </li>
                 </ul>
             </div>
-            <div id="thumbnailContainer">
-                <ul class="thumbnails" id="thumbnailList">
+            <div id="thumbnailContainer" class="thumbnail-container">
+                <ul id="thumbnailList" class="thumbnails">
                     <li>
                         <a href="#slide1">
                             <img src="assets/images/hero-1.png" class="thumbnail-hero" id="thumbnail-hero-1"; onmouseover="this.src='/assets/images/hero-showing-1.png';" onmouseout="this.src='assets/images/hero-1.png';"/>
-                        </a>Ja mogu da kažem ne
+                        </a>
+                        <div class="hero-subtitle-container">Ja mogu da kažem ne</div>
                     </li>
                     <li>
                         <a href="#slide2">
                             <img src="assets/images/hero-2.png" class="thumbnail-hero" id="thumbnail-hero-2"; onmouseover="this.src='/assets/images/hero-showing-2.png';" onmouseout="this.src='assets/images/hero-2.png';"/>
-                        </a>Ja mogu da budem jak
+                        </a>
+                        <div class="hero-subtitle-container">Ja mogu da budem jak</div>
                     </li>
                     <li>
                         <a href="#slide3">
                             <img src="assets/images/hero-3.png" class="thumbnail-hero" id="thumbnail-hero-3"; onmouseover="this.src='/assets/images/hero-showing-3.png';" onmouseout="this.src='assets/images/hero-3.png';"/>
-                        </a>Ja mogu da pomognem
+                        </a>
+                        <div class="hero-subtitle-container">Ja mogu da pomognem</div>
                     </li>
                     <li>
                         <a href="#slide4">
                             <img src="assets/images/hero-4.png" class="thumbnail-hero" id="thumbnail-hero-4"; onmouseover="this.src='/assets/images/hero-showing-4.png';" onmouseout="this.src='assets/images/hero-4.png';"/>
-                        </a>Ja mogu da budem OK
+                        </a>
+                        <div class="hero-subtitle-container">Ja mogu da budem OK</div>
                         </li>
                     <li>
                         <a href="#slide5">
                             <img src="assets/images/hero-5.png" class="thumbnail-hero" id="thumbnail-hero-5"; onmouseover="this.src='/assets/images/hero-showing-5.png';" onmouseout="this.src='assets/images/hero-5.png';"/>
-                        </a>Ja mogu da pričam o svemu
+                        </a>
+                        <div class="hero-subtitle-container">Ja mogu da pričam o svemu</div>
                     </li>
                 </ul>
             </div>
@@ -1175,7 +1186,7 @@
                 var target = event.target;
             
                 while (target != this) {
-                    if (target.tagName == 'LI') {
+                    if (target.tagName == 'IMG') {
                         highlight(target);
                         return;
                 }
@@ -1230,7 +1241,6 @@
         </ul>
     </section>
 </footer>
-    <!-- <div class="hide-site"> -->
     <a class="hide-site" href="https://google.com" target="_self" rel="noopener noreferrer">Izađi</span><i class="fas fa-sign-out-alt" aria-hidden="true"></i></span></a>
   </body>
 </html>

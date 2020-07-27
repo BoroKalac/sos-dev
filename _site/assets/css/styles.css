@@ -44,6 +44,22 @@ a { color: #464646; }
 
 body { font-family: 'Roboto', sans-serif; margin: 0; }
 
+.scene-button-container { margin-top: 60px; text-align: center; margin-bottom: 60px; }
+
+.hide-site { display: block; position: fixed; z-index: 5; top: 30%; right: -30px; -webkit-transform: rotate(-90deg); -ms-transform: rotate(-90deg); transform: rotate(-90deg); font-size: 18px; border: thin solid #008c99; padding: 8px 24px; border-radius: 92px; background-color: #008c99; color: white; text-decoration: none; }
+
+.hide-site:hover { background-color: white; color: #008c99; }
+
+.hide-site:hover a { color: #008c99; }
+
+.hide-site i { padding-left: 5px; }
+
+@media screen and (max-width: 825px) { .hero-ability-container, .special-ability-container { visibility: hidden; } .choose-hero-button, .hero-1-button.hero-2-button.hero-3-button.hero-4-button.hero-5-button { visibility: visible; font-size: 12px; width: min-content; margin-right: 63px; } }
+
+@media screen and (max-width: 500px) { .hide-site { font-size: 14px; padding: 6px 20px; } .thumbnail-container { display: flex; justify-content: space-around; } }
+
+.error-page { display: grid; place-items: center; margin-top: 13em; margin-bottom: 13em; color: #555555; }
+
 .hero-container { font-family: 'Rowdies', cursive; display: flex; margin: auto; -webkit-box-pack: center; justify-content: center; padding-top: 30px; padding-bottom: 30px; flex-direction: column; background-image: url("/assets/images/bg.jpg"); background-position: center; background-size: cover; }
 
 .hero-container h1 { color: #555; margin-top: 30px; margin-bottom: 20px; font-family: 'Rowdies', cursive; }
@@ -80,7 +96,17 @@ body { font-family: 'Roboto', sans-serif; margin: 0; }
 
 .slides li:not(:target) { -webkit-animation: hidden 1s 1; display: none; }
 
-.hero-subtitle-container { border: thin solid grey; margin: 0px 5px; padding: 5px 0px; }
+.hero-subtitle-container { border: thin solid; margin: 0px 5px; padding: 5px 0px; }
+
+.hero-subtitle-color-1 { border-color: orange; }
+
+.hero-subtitle-color-2 { border-color: red; }
+
+.hero-subtitle-color-3 { border-color: #ffb901; }
+
+.hero-subtitle-color-4 { border-color: purple; }
+
+.hero-subtitle-color-5 { border-color: green; }
 
 @keyframes pop { 0% { transform: scale(1); }
   100% { transform: scale(1.5); } }
@@ -146,22 +172,6 @@ body { font-family: 'Roboto', sans-serif; margin: 0; }
 @keyframes glow-green { 0% { background: green; }
   25% { background: #7afc7a; }
   100% { background: green; } }
-
-.scene-button-container { margin-top: 60px; text-align: center; margin-bottom: 60px; }
-
-.hide-site { display: block; position: fixed; z-index: 5; top: 30%; right: -30px; -webkit-transform: rotate(-90deg); -ms-transform: rotate(-90deg); transform: rotate(-90deg); font-size: 18px; border: thin solid #008c99; padding: 8px 24px; border-radius: 92px; background-color: #008c99; color: white; text-decoration: none; }
-
-.hide-site:hover { background-color: white; color: #008c99; }
-
-.hide-site:hover a { color: #008c99; }
-
-.hide-site i { padding-left: 5px; }
-
-@media screen and (max-width: 825px) { .hero-ability-container, .special-ability-container { visibility: hidden; } .choose-hero-button, .hero-1-button.hero-2-button.hero-3-button.hero-4-button.hero-5-button { visibility: visible; font-size: 12px; width: min-content; margin-right: 63px; } }
-
-@media screen and (max-width: 500px) { .hide-site { font-size: 14px; padding: 6px 20px; } .thumbnail-container { display: flex; justify-content: space-around; } }
-
-.error-page { display: grid; place-items: center; margin-top: 13em; margin-bottom: 13em; color: #555555; }
 
 .footer-container { box-sizing: border-box; font-family: "Roboto", sans-serif; margin: 0; padding: 0; background-color: #008c99; color: #bbb; line-height: 1.5; color: #bbb; line-height: 1.5; }
 

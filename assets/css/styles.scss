@@ -5,6 +5,7 @@ $baseurl: "{{ site.baseurl }}";
 @import "header";
 @import "navigation";
 @import "banner";
+@import "circleSection";
 @import "main";
 @import "heroContainer";
 @import "footer"

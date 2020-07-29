@@ -50,14 +50,25 @@ body {
 @media screen and (max-width: 825px) {
   .hero-ability-container,
   .special-ability-container {
-    visibility: hidden;
+    display: none;
   }
 
-  .choose-hero-button, .hero-1-button.hero-2-button.hero-3-button.hero-4-button.hero-5-button {
-    visibility: visible;
-    font-size: 12px;
-    width: min-content;
-    margin-right: 63px;
+  li .choose-hero-button-container-sm {
+    display: inline;
+
+    .choose-hero-button, .hero-1-button.hero-2-button.hero-3-button.hero-4-button.hero-5-button {
+      font-size: 12px;
+      width: min-content;
+      padding: 6px 22px;
+    }
+  }
+
+  li .hero-image-button-container {
+    display: flex;
+
+    img {
+      margin-right: -10px;
+    }
   }
 
   .circle-container  {

@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
+.title-subtitle-container {
+  background: rgb(77,185,152);
+  background: linear-gradient(90deg, rgba(77,185,152,0.24695815826330536) 0%, rgba(225,187,48,0.2217480742296919) 35%, rgba(85,141,224,0.2721682422969187) 100%);
+  padding-top: 20px;
+}
+
 .main-title, .main-subtitle {
   text-align: center;
   color: #555555;
@@ -12,7 +18,6 @@
   font-family: 'Source Code Pro', monospace;  
   font-size: 66px;
   margin: 0 auto;
-  margin-top: 20px;
 }
   
   .main-title {

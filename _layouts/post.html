@@ -10,5 +10,7 @@ layout: default
     - <a href="{{ author.url }}">{{ author.name }}</a>
   {% endif %}
 </p>
-
+<div class="blog-post-image-container">
+  <img class="blog-post-image" src="{{ page.thumbnail }}" alt="">
+</div>
 {{ content }}

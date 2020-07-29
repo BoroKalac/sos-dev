@@ -125,6 +125,10 @@ body { font-family: 'Roboto', sans-serif; margin: 0; }
 
 .blog-list-img-container .post-image-container .post-image { width: 70%; }
 
+.blog-post-image-container { margin-left: 20%; margin-right: 20%; }
+
+.blog-post-image-container .blog-post-image { width: 100%; }
+
 .hero-container { font-family: 'Rowdies', cursive; display: flex; margin: auto; -webkit-box-pack: center; justify-content: center; padding-top: 30px; padding-bottom: 30px; flex-direction: column; background-image: url("/assets/images/bg.jpg"); background-position: center; background-size: cover; }
 
 .hero-container h1 { color: #555; margin-top: 30px; margin-bottom: 20px; font-family: 'Rowdies', cursive; }

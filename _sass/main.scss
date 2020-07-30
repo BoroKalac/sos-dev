@@ -111,7 +111,7 @@ body {
   }
 
   .circle-container .circle {
-    height: 27em;
+    height: 28em;
   }
 }
 
@@ -179,11 +179,23 @@ body {
 }
 
 .blog-post-image-container {
-  //width: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
   margin-left: 20%;
   margin-right: 20%;
 
   .blog-post-image {
     width: 100%;
   }  
+}
+
+.blog-post-container {
+  color: #555555;
+  padding: 3em;
+}
+
+.blog-post-title,
+.blog-post-date {
+  color: #555555;
+  text-align: center;
 }

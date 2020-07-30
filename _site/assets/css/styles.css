@@ -100,7 +100,7 @@ body { font-family: 'Roboto', sans-serif; margin: 0; }
 @media screen and (max-width: 825px) { .hero-ability-container, .special-ability-container { display: none; } li .choose-hero-button-container-sm { display: inline; } li .choose-hero-button-container-sm .choose-hero-button, li .choose-hero-button-container-sm .hero-1-button.hero-2-button.hero-3-button.hero-4-button.hero-5-button { font-size: 12px; width: min-content; padding: 6px 22px; } li .hero-image-button-container { display: flex; } li .hero-image-button-container img { margin-right: -10px; } .circle-container { flex-direction: column; } .circle-container .circle { width: 100%; } .information-container .blog-list-img-container { flex-direction: column; } .information-container .blog-list-img-container .post-image { width: 100% !important; } }
 
 @media screen and (max-width: 500px) { .hide-site { font-size: 14px; padding: 6px 20px; } .thumbnail-container { display: flex; justify-content: space-around; } .main-title { font-size: 50px; } @keyframes animated-text { from { width: 0; }
-    to { width: 420px; } } .circle-container .circle { height: 27em; } }
+    to { width: 420px; } } .circle-container .circle { height: 28em; } }
 
 @media screen and (max-width: 400px) { .main-title { font-size: 40px; } @keyframes animated-text { from { width: 0; }
     to { width: 330px; } } }
@@ -125,9 +125,13 @@ body { font-family: 'Roboto', sans-serif; margin: 0; }
 
 .blog-list-img-container .post-image-container .post-image { width: 70%; }
 
-.blog-post-image-container { margin-left: 20%; margin-right: 20%; }
+.blog-post-image-container { margin-top: 20px; margin-bottom: 20px; margin-left: 20%; margin-right: 20%; }
 
 .blog-post-image-container .blog-post-image { width: 100%; }
+
+.blog-post-container { color: #555555; padding: 3em; }
+
+.blog-post-title, .blog-post-date { color: #555555; text-align: center; }
 
 .hero-container { font-family: 'Rowdies', cursive; display: flex; margin: auto; -webkit-box-pack: center; justify-content: center; padding-top: 30px; padding-bottom: 30px; flex-direction: column; background-image: url("/assets/images/bg.jpg"); background-position: center; background-size: cover; }
 

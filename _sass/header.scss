@@ -1,8 +1,10 @@
 .top-header {
   padding-top: 5px;
   padding-bottom: 5px;
-  background-color: #008c99;
+  background-color: #3ab0b5;
   color: #fff;
+  font-size: 28px;
+  font-weight: 600;
   
   .top-header-list {
     display: flex;
@@ -19,9 +21,31 @@
   a {
     text-decoration: none;
     color: #fff;
+    //padding: 5px 10px 5px 10px;
+    
   }
   
   a > i {
     margin-right: 10px;
+  }
+
+  .chat-container {
+    border: thin solid transparent;
+    border-radius: 25px;
+    padding-right: 30px;
+    padding-left: 30px;
+    background: rgb(225,187,48);
+    background: linear-gradient(90deg, rgba(225,187,48,1) 0%, rgba(77,185,152,1) 35%, rgba(85,141,224,0.9864320728291317) 100%);
+
+  }
+
+  img {
+    width: 30px;
+    margin-right: 10px;
+  }
+
+  .image-title-container {
+    display: flex;
+    align-items: center;
   }
 }

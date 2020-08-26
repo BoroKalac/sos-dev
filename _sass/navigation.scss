@@ -3,8 +3,6 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  border-top: thin solid darkgrey;
-  border-bottom: thin solid darkgrey;
   align-items: center;
   
   a:link {
@@ -13,11 +11,11 @@
   }
 
   img {
-    height: 70px;
+    height: 100px;
   }
 
   .logo-container {
-    padding-left: 40px;
+    padding: 20px 0px 20px 40px;
     display: flex;
     flex-grow: 1;
 

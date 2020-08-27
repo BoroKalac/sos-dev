@@ -4,5 +4,5 @@ function navFunction() {
       x.className += " responsive";
     } else {
       x.className = "navigation-top";
-    }
+    };
   }

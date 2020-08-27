@@ -53,26 +53,36 @@
     min-width: auto;
   }
   
+  .footer-social {
+    background-color: #1e9096;
+  }
+
   .footer-social-list {
     display: flex;
     justify-content: center;
-    border-top: 1px #555 solid;
-  
     padding-top: 1.25rem;
+    padding-bottom: 1.25em;
+    margin: 0;
   }
+
   .footer-social-list li {
-    font-size: 1.50rem;
+    font-size: 3rem;
   }
   
   .footer-legal {
     padding: 0.9375rem 1.875rem;
-    background-color: #333;
+    background-color: #157a7e;
+    color: white;
+    font-size: 20px;
   }
+
   .footer-legal-list {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
+
   .footer-legal-list li {
     margin: 0.125rem 0.625rem;
     white-space: nowrap;
@@ -80,5 +90,10 @@
   
   .footer-legal-list li:nth-last-child(2) {
       flex: 1;
+  }
+
+  .legal-link a:hover {
+    text-decoration: none;
+    color: rgb(255, 0, 230);
   }
 }  

@@ -7,9 +7,9 @@
   padding-top: 30px;
   padding-bottom: 30px;
   flex-direction: column;
-  background-image: url('#{$baseurl}/assets/images/bg.jpg');
-  background-position: center;
-  background-size: cover;
+  //background-image: url('#{$baseurl}/assets/images/bg.jpg');
+  //background-position: center;
+  //background-size: cover;
   
   h1 {
     color: #555;
@@ -133,9 +133,10 @@
 }
 
 .hero-subtitle-container {
-  border: thin solid;
+  border: 2px solid;
   margin: 0px 5px;
-  padding: 5px 0px;
+  padding: 10px 0px;
+  border-radius: 25px;
 }
 
 .hero-subtitle-color-1 {

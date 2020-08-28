@@ -113,7 +113,7 @@ body { font-family: 'Montserrat', sans-serif; margin: 0; }
     to { width: 300px; } } }
 
 @media screen and (max-width: 500px) { .hide-site { font-size: 14px; padding: 6px 20px; } .thumbnail-container { display: flex; justify-content: space-around; } .main-title { font-size: 32px; } .hero-subtitle-container { display: none; } @keyframes animated-text { from { width: 0; }
-    to { width: 265px; } } .circle-container .circle { height: 28em; } .legal-link { font-size: 16px; } .top-header .top-header-list { justify-content: center; padding-left: 0; } }
+    to { width: 265px; } } .circle-container .circle { height: 28em; } .legal-link { font-size: 16px; } .top-header .top-header-list { justify-content: center; padding-left: 0; } h2.information-title { text-align: center; } }
 
 @media screen and (max-width: 825px) { .hero-ability-container { display: none; } button.choose-hero-button { font-size: 16px; padding: 7px 20px; } li .choose-hero-button-container-sm { display: inline; } li .choose-hero-button-container-sm .choose-hero-button, li .choose-hero-button-container-sm .hero-1-button.hero-2-button.hero-3-button.hero-4-button.hero-5-button { font-size: 12px; width: min-content; padding: 6px 22px; } li .hero-image-button-container { display: flex; } li .hero-image-button-container img { margin-right: -10px; } .circle-container { flex-direction: column; } .circle-container .circle { width: 100%; } .banner-container img { display: none; } .banner-container div { padding-top: 20px; padding-bottom: 20px; } .banner-container { display: none; } }
 
@@ -129,7 +129,7 @@ body { font-family: 'Montserrat', sans-serif; margin: 0; }
 
 .information-container .blog-page-container { padding: 0px; }
 
-.information-container .information-title { font-weight: 600; font-size: 36px; }
+.information-container .information-title { font-weight: 600; font-size: 36px; padding-left: 15px; }
 
 .blog-post-container { margin: auto; color: #555555; padding: 3em; max-width: 1300px; }
 
@@ -281,6 +281,8 @@ body { font-family: 'Montserrat', sans-serif; margin: 0; }
 .blog-page-container .blog-page-post-image:hover { transition: .5s ease; opacity: 0.5; }
 
 @media screen and (max-width: 825px) { .blog-page-container .grid-container ul { grid-template-columns: 100%; } }
+
+.blog-page-container .read-more a { color: #008c99; text-decoration: none; }
 
 .footer-container { box-sizing: border-box; font-family: "Roboto", sans-serif; margin: 0; padding: 0; background-color: #3ab0b5; color: #bbb; line-height: 1.5; color: #bbb; line-height: 1.5; }
 

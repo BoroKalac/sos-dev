@@ -91,6 +91,10 @@ body {
     justify-content: center;
     padding-left: 0;
   }
+
+  h2.information-title {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 825px) {
@@ -185,6 +189,7 @@ body {
   .information-title {
     font-weight: 600;
     font-size: 36px;
+    padding-left: 15px;
   }
 }
 

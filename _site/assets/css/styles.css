@@ -43,7 +43,7 @@ a { color: #464646; }
 
 @media screen and (max-width: 825px) { .navigation-top a { display: none; } .navigation-top a.icon { display: block; text-align: center; margin: 20px; } .navigation-top .logo-container { display: flex; justify-content: center; padding-top: 0px; padding-right: 0px; padding-left: 0px; padding-bottom: 0px; } }
 
-@media screen and (max-width: 825px) { .navigation-top { display: flex; } .navigation-top.responsive i { margin-top: 17px; } .navigation-top.responsive .list-container { position: relative; display: block; } .navigation-top.responsive .list-container a { margin-top: 15px; margin-bottom: 10px; padding-bottom: 5px; padding-top: 5px; } .navigation-top.responsive .list-container .icon { margin-top: 0px; } .list-container { justify-content: flex-end; } .navigation-top.responsive a.icon { position: absolute; right: 0; top: 0; } .navigation-top.responsive a { display: block; } }
+@media screen and (max-width: 825px) { .navigation-top { display: flex; } .navigation-top.responsive i { margin-top: 17px; } .navigation-top.responsive .list-container { position: relative; display: block; } .navigation-top.responsive .list-container a { margin-top: 15px; margin-bottom: 10px; padding-bottom: 5px; padding-top: 5px; } .navigation-top.responsive .list-container .icon { margin-top: 0px; } .list-container { justify-content: flex-end; } .navigation-top.responsive a.icon { position: absolute; right: 0; top: 0; } .navigation-top.responsive a { display: block; } .navigation-top { border-bottom: thin solid lightgray; } }
 
 @media screen and (max-width: 500px) { .navigation-top { display: flex; } .navigation-top img { height: 70px; } }
 
@@ -258,7 +258,7 @@ body { font-family: 'Montserrat', sans-serif; margin: 0; }
 
 .blog-page-container { color: #555555; padding: 5em 5em; }
 
-.blog-page-container .grid-container ul { display: grid; grid-template-columns: 33% 33% 33%; }
+.blog-page-container .grid-container ul { display: grid; grid-template-columns: 33% 33% 33%; padding: 0px; }
 
 .blog-page-container .blog-page-title { text-align: center; margin: 60px 0px 30px 0px; }
 

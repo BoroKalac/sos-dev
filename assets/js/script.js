@@ -1,7 +1,7 @@
 function loadBanner() {
-    var banner = document.querySelector('#banner-container-id');
-    var width = window.innerWidth;
+    const banner = document.querySelector('#banner-container-id');
+    let width = window.innerWidth;
     if (width < 800) {
-      banner.style.display = 'block';
+        banner.style.display = 'block';
     };
-  };
+};

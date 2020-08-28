@@ -119,6 +119,10 @@ a {
   .navigation-top.responsive a {
     display: block;
   }
+
+  .navigation-top {
+    border-bottom: thin solid lightgray;
+  }
 }
 
 @media screen and (max-width: 500px) {

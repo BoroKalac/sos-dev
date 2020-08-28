@@ -194,23 +194,39 @@ title: 6-12
             </div>
         </div>
 
+        <hr class="solid">
+
         <div class="information-container">
-            <h2>Informacije i saveti</h2>
-            <!-- <img class="title-underline" src="/assets/images/dashed-underline.webp" alt=""> -->
-            <div class="blog-list-img-container">
-                <div class="post-list-container">
+            <h2 class="information-title">Informacije i saveti</h2>
+            <div class="blog-page-container">
+                <div class="grid-container">
                     <ul>
                       {% assign filtered_posts = site.posts | where: 'category_name', 'deca' %}
                       {% for post in filtered_posts limit: 8 %}
-                        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                        <div class="single-post-container">
+                            <li>
+                              <a href="{{ post.url }}">
+                                <img class="blog-page-post-image" src="{{ post.thumbnail }}" alt="">
+                              </a>
+                              <div class="title-date-container">
+                                <div class="post-date-container">
+                                  {{ post.date | date_to_string }}
+                                </div>
+                                <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                                <p class="read-more"><a href="{{ post.url }}">Pročitaj članak ></a></p>
+                              </div>
+                              <!-- <div class="post-excerpt-container">
+                                <p>
+                                  {{ post.excerpt }}
+                                </p>
+                              </div> -->
+                            </li>
+                          </div>
                       {% endfor %}
                     </ul>
                 </div>
-                <!-- <div class="post-image-container">
-                    <img class="post-image" src="/assets/images/download.webp" alt="">
-                </div> -->
             </div>
-        </div>
+            </div>
         <script>
             document.addEventListener('DOMContentLoaded', function() {
                 var url = window.location.href;

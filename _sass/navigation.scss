@@ -21,6 +21,7 @@
 
     a {
       text-decoration: none;
+      display: block;
     }
 
     a:hover {
@@ -122,7 +123,11 @@ a {
 
 @media screen and (max-width: 500px) {
   .navigation-top {
-    display: block;
+    display: flex;
+  }
+
+  .navigation-top img {
+    height: 70px;
   }
 }
 

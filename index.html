@@ -9,6 +9,7 @@ layout: default
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script onload="loadBanner()" src="assets/js/script.js"></script>
   </head>
   <body>
     <div class="title-subtitle-container">
@@ -51,13 +52,13 @@ layout: default
         window.open(url, '_self');
       };
 
-      window.onload = function loadBanner() {
-        var banner = document.querySelector('#banner-container-id');
-        var width = window.innerWidth;
-        if (width < 800) {
-          banner.style.display = 'block';
-        };
-      };
+      // window.onload = function loadBanner() {
+      //   var banner = document.querySelector('#banner-container-id');
+      //   var width = window.innerWidth;
+      //   if (width < 800) {
+      //     banner.style.display = 'block';
+      //   };
+      // };
     </script>
   </body>
 </html>

@@ -123,7 +123,7 @@ body { font-family: 'Montserrat', sans-serif; margin: 0; }
 
 .solid { border-top: thin solid lightgray; width: 96%; }
 
-.information-container { color: #555555; padding-top: 15px; font-weight: bold; max-width: 1300px; margin: auto; }
+.information-container { color: #555555; padding-top: 15px; font-weight: bold; max-width: 1300px; margin: auto; padding-right: 30px; padding-left: 30px; }
 
 .information-container h2 { text-align: left; }
 
@@ -179,15 +179,39 @@ body { font-family: 'Montserrat', sans-serif; margin: 0; }
 
 .hero-subtitle-container { border: 2px solid; margin: 0px 5px; padding: 10px 0px; border-radius: 25px; }
 
+.hero-subtitle-container a { text-decoration: none; }
+
+.hero-subtitle-container:hover a { color: #fff; }
+
 .hero-subtitle-color-1 { border-color: orange; }
+
+.hero-subtitle-color-1:hover { background-color: orange; }
+
+.hero-subtitle-color-1 a:hover { background-color: orange; }
 
 .hero-subtitle-color-2 { border-color: red; }
 
+.hero-subtitle-color-2:hover { background-color: red; }
+
+.hero-subtitle-color-2 a:hover { background-color: red; }
+
 .hero-subtitle-color-3 { border-color: #ffb901; }
+
+.hero-subtitle-color-3:hover { background-color: #ffb901; }
+
+.hero-subtitle-color-3 a:hover { background-color: #ffb901; }
 
 .hero-subtitle-color-4 { border-color: purple; }
 
+.hero-subtitle-color-4:hover { background-color: purple; }
+
+.hero-subtitle-color-4 a:hover { background-color: purple; }
+
 .hero-subtitle-color-5 { border-color: green; }
+
+.hero-subtitle-color-5:hover { background-color: green; }
+
+.hero-subtitle-color-5 a:hover { background-color: green; }
 
 @keyframes pop { 0% { transform: scale(1); }
   100% { transform: scale(1.5); } }
@@ -256,7 +280,7 @@ body { font-family: 'Montserrat', sans-serif; margin: 0; }
   25% { background: #7afc7a; }
   100% { background: green; } }
 
-.blog-page-container { color: #555555; padding: 5em 5em; }
+.blog-page-container { color: #555555; border-top: thin solid lightgrey; max-width: 1300px; margin: auto; }
 
 .blog-page-container .grid-container ul { display: grid; grid-template-columns: 33% 33% 33%; padding: 0px; }
 

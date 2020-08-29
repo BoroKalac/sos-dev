@@ -1,6 +1,10 @@
 .blog-page-container {
   color: #555555;
-  padding: 5em 5em;
+  //padding: 5em 5em;
+  border-top: thin solid lightgrey;
+  max-width: 1300px;
+  margin: auto;
+
   
   .grid-container ul {
     display: grid;

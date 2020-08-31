@@ -4,7 +4,6 @@
   background-color: #3ab0b5;
   color: #fff;
   font-size: 28px;
-  font-weight: 600;
   
   .top-header-list {
     display: flex;
@@ -22,9 +21,7 @@
   
   a {
     text-decoration: none;
-    color: #fff;
-    //padding: 5px 10px 5px 10px;
-    
+    color: #fff
   }
   
   a > i {
@@ -32,10 +29,9 @@
   }
 
   .chat-container {
-    border: thin solid #fff;
     border-radius: 25px;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 25px;
+    padding-left: 25px;
     background: rgb(225,187,48);
     background: linear-gradient(90deg, rgba(225,187,48,1) 0%, rgba(77,185,152,1) 35%, rgba(85,141,224,0.9864320728291317) 100%);
 

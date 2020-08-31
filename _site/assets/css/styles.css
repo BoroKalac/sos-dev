@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
-.top-header { padding-top: 5px; padding-bottom: 5px; background-color: #3ab0b5; color: #fff; font-size: 28px; font-weight: 600; }
+.top-header { padding-top: 5px; padding-bottom: 5px; background-color: #3ab0b5; color: #fff; font-size: 28px; }
 
 .top-header .top-header-list { display: flex; flex-wrap: wrap; margin-top: 0; margin-bottom: 0; }
 
@@ -9,7 +9,7 @@
 
 .top-header a > i { margin-right: 10px; }
 
-.top-header .chat-container { border: thin solid #fff; border-radius: 25px; padding-right: 30px; padding-left: 30px; background: #e1bb30; background: linear-gradient(90deg, #e1bb30 0%, #4db998 35%, rgba(85, 141, 224, 0.986432) 100%); }
+.top-header .chat-container { border-radius: 25px; padding-right: 25px; padding-left: 25px; background: #e1bb30; background: linear-gradient(90deg, #e1bb30 0%, #4db998 35%, rgba(85, 141, 224, 0.986432) 100%); }
 
 .top-header img { width: 30px; margin-right: 10px; }
 
@@ -113,7 +113,7 @@ body { font-family: 'Montserrat', sans-serif; margin: 0; }
     to { width: 300px; } } }
 
 @media screen and (max-width: 500px) { .hide-site { font-size: 14px; padding: 6px 20px; } .thumbnail-container { display: flex; justify-content: space-around; } .main-title { font-size: 32px; } .hero-subtitle-container { display: none; } @keyframes animated-text { from { width: 0; }
-    to { width: 265px; } } .circle-container .circle { height: 28em; } .legal-link { font-size: 16px; } .top-header .top-header-list { justify-content: center; padding-left: 0; } h2.information-title { text-align: center; } }
+    to { width: 265px; } } .circle-container .circle { height: 28em; } .legal-link { font-size: 16px; } .top-header .top-header-list { justify-content: center; padding-left: 0; align-items: center; font-size: 18px; } h2.information-title { text-align: center; } }
 
 @media screen and (max-width: 825px) { .hero-ability-container { display: none; } button.choose-hero-button { font-size: 16px; padding: 7px 20px; } li .choose-hero-button-container-sm { display: inline; } li .choose-hero-button-container-sm .choose-hero-button, li .choose-hero-button-container-sm .hero-1-button.hero-2-button.hero-3-button.hero-4-button.hero-5-button { font-size: 12px; width: min-content; padding: 6px 22px; } li .hero-image-button-container { display: flex; } li .hero-image-button-container img { margin-right: -10px; } .circle-container { flex-direction: column; } .circle-container .circle { width: 100%; } .banner-container img { display: none; } .banner-container div { padding-top: 20px; padding-bottom: 20px; } .banner-container { display: none; } }
 

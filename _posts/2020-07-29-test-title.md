@@ -3,7 +3,7 @@ layout: post
 category_name: deca
 title: Test title
 date: 2020-07-29T12:58:13.123Z
-thumbnail: /assets/uploads/001-mogu-da-kazem-ne.jpg
+thumbnail: /assets/images/placeimg_640_480_any-2-.jpg
 ---
 ## What is Lorem Ipsum?
 

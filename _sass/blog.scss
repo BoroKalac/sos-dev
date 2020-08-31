@@ -13,8 +13,8 @@
   }
 
   .blog-page-title {
-    text-align: center;
-    margin: 60px 0px 30px 0px;
+    text-align: left;
+    margin: 60px 15px 30px 15px;
   }
 
   .title-underline {
@@ -69,6 +69,26 @@
   .read-more a {
     color: #008c99;
     text-decoration: none;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 18px;
+    font-weight: bolder;
   }
 }
 
+.post-excerpt-container {
+  padding-left: 16px;
+  padding-right: 16px;;
+}
+
+.read-more-container-kids .read-more a {
+  color: #558de0;
+}
+
+.read-more-container-teens .read-more a {
+  color: #e1bb30;
+}
+
+.read-more-container-young .read-more a {
+  color: #4db998;
+}

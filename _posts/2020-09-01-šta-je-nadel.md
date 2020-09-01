@@ -2,7 +2,7 @@
 layout: post
 title: Šta je NADEL?
 date: 2020-09-01T12:26:45.765Z
-thumbnail: /assets/images/Logo-nadel.png
+thumbnail: /assets/images/untitled-design-1-.png
 ---
 ZDRAVO!
 

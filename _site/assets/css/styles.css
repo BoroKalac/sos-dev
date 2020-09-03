@@ -11,6 +11,8 @@
 
 .top-header .chat-container { border-radius: 25px; padding-right: 25px; padding-left: 25px; background-color: #ffd517; padding-top: 4px; padding-bottom: 4px; }
 
+.top-header .chat-container:hover { background-color: #91d4d4; }
+
 .top-header img { width: 38px; margin-right: 10px; }
 
 .top-header .image-title-container { display: flex; align-items: center; }

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
 .top-header { padding-top: 5px; padding-bottom: 5px; background-color: #3ab0b5; color: #fff; font-size: 28px; }
 
-.top-header .top-header-list { display: flex; flex-wrap: wrap; margin-top: 0; margin-bottom: 0; }
+.top-header .top-header-list { display: flex; flex-wrap: wrap; margin-top: 0; margin-bottom: 0; align-items: center; }
 
 .top-header .top-header-list li { margin-left: 10px; margin-right: 10px; white-space: nowrap; list-style: none; }
 
@@ -9,9 +9,9 @@
 
 .top-header a > i { margin-right: 10px; }
 
-.top-header .chat-container { border-radius: 25px; padding-right: 25px; padding-left: 25px; background: #e1bb30; background: linear-gradient(90deg, #e1bb30 0%, #4db998 35%, rgba(85, 141, 224, 0.986432) 100%); }
+.top-header .chat-container { border-radius: 25px; padding-right: 25px; padding-left: 25px; background-color: #ffd517; padding-top: 4px; padding-bottom: 4px; }
 
-.top-header img { width: 30px; margin-right: 10px; }
+.top-header img { width: 38px; margin-right: 10px; }
 
 .top-header .image-title-container { display: flex; align-items: center; }
 

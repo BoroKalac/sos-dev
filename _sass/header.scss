@@ -10,6 +10,7 @@
     flex-wrap: wrap;
     margin-top: 0;
     margin-bottom: 0;
+    align-items: center;
 }
     
   .top-header-list li {
@@ -32,13 +33,13 @@
     border-radius: 25px;
     padding-right: 25px;
     padding-left: 25px;
-    background: rgb(225,187,48);
-    background: linear-gradient(90deg, rgba(225,187,48,1) 0%, rgba(77,185,152,1) 35%, rgba(85,141,224,0.9864320728291317) 100%);
-
+    background-color: #ffd517;
+    padding-top: 4px;
+    padding-bottom: 4px;
   }
 
   img {
-    width: 30px;
+    width: 38px;
     margin-right: 10px;
   }
 

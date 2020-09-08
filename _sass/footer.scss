@@ -29,6 +29,10 @@
     font-size: 1.375rem;
     padding-bottom: 0.625rem;
   }
+
+  .footer-subtitle {
+    color: white;
+  }
   
   .container {
     flex: 1;
@@ -38,11 +42,22 @@
     display: flex;
     flex-wrap: wrap;
   }
+
+  .disclaimer {
+    color: white;
+    font-size: 12px;
+  }
+
+  .unicef-logo {
+    width: 35%;
+  }
+
   @media only screen and (min-width: 477px) {
     .footer-main {
       justify-content: space-evenly;
     }
   }
+
   @media only screen and (min-width: 1240px) {
     .footer-main {
       justify-content: space-evenly;

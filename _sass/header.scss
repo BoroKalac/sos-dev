@@ -41,6 +41,8 @@
       cursor: pointer;
       display: flex;
       align-items: center;
+      padding-top: 5px;
+      padding-bottom: 5px;
 
       &:hover {
         background-color: #91d4d4;
@@ -54,15 +56,10 @@
         outline: none;
       }
 
-
       img {
         width: 38px;
         margin-right: 10px;
       }
-    }
-
-    textarea {
-      padding-bottom: 3px;
     }
   }
 }

@@ -11,12 +11,37 @@
     <script type="text/javascript" src="/assets/js/navigation.js"></script>
     <script src="https://kit.fontawesome.com/ff530a4a56.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+      /*
+      here you can add user_data to config object
+      eg.   
+      custom_user_data = {
+              externalId: "your_id_for_user",
+              email: "email",
+              username: "username",
+              firstname: "user_first_name",
+              lastname: "user_last_name",
+              additionalFields: "nickname=userNickname; phoneNumber=121212"
+      };
+      */
+  
+       if("undefined"!==typeof requirejs)window.onload=function(e){requirejs(["https://paldesk.io/api/widget-client?apiKey=d95de79f8b5d13418d03b0f2c01b8821"],function(e){"undefined"!==typeof custom_user_data&&(beebeeate_config.user_data=custom_user_data),BeeBeeate.widget.new(beebeeate_config)})};
+      else{var s=document.createElement("script");s.async=!0,s.src="https://paldesk.io/api/widget-client?apiKey=d95de79f8b5d13418d03b0f2c01b8821",s.onload=function(){"undefined"!==typeof custom_user_data&&(beebeeate_config.user_data=custom_user_data),BeeBeeate.widget.new(beebeeate_config)};
+      if(document.body){
+          document.body.appendChild(s)
+      }
+      else if(document.head){
+          document.head.appendChild(s)
+      }
+      }
+  
+  </script>
   </head>
   <body>
     <header class="top-header">
     <ul class="top-header-list">
         <li><a href="tel:116-111">Pozovite: <strong>116 111</strong></a></li>
-        <li class="chat-container"><a href="#"><div class="image-title-container"><img src="/assets/images/speech-bubble.png" alt="">SOS Chat</div></a></li>
+        <li class="chat-container"><button class="chat-button" onclick=window.BeeBeeate.widget.openChat()><img src="/assets/images/speech-bubble.png" alt="">SOS Chat</button></li>
     </ul>
 </header>
     <nav class="navigation-top" id="navigationTop">

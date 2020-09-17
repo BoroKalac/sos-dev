@@ -21,7 +21,7 @@
 
 .navigation-top { position: sticky; display: flex; flex-wrap: nowrap; justify-content: center; align-items: center; }
 
-.navigation-top a:link { text-decoration: none; line-height: normal; }
+.navigation-top a:link { text-decoration: none; line-height: normal; font-weight: bold; }
 
 .navigation-top img { height: 100px; }
 
@@ -73,12 +73,12 @@ a.icon::before { background-color: unset; }
 
 .main-title, .main-subtitle { text-align: center; color: #555555; }
 
-.main-title { border-right: solid 3px rgba(0, 140, 153, 0.75); white-space: nowrap; overflow: hidden; font-family: 'Source Code Pro', monospace; font-size: 66px; margin: 0 auto; }
+.main-title { border-right: solid 3px rgba(0, 140, 153, 0.75); white-space: nowrap; overflow: hidden; font-family: 'Source Code Pro', monospace; font-size: 66px; margin: 0 auto 50px auto; }
 
 .main-title { animation: animated-text 4s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(29, end) infinite; }
 
 @keyframes animated-text { from { width: 0; }
-  to { width: 545px; } }
+  to { width: 625px; } }
 
 @keyframes animated-cursor { from { border-right-color: #008c99; }
   to { border-right-color: transparent; } }
@@ -114,10 +114,10 @@ body { font-family: 'Montserrat', sans-serif; margin: 0; }
 .hide-site i { padding-left: 5px; }
 
 @media screen and (max-width: 400px) { .main-title { font-size: 24px; } @keyframes animated-text { from { width: 0; }
-    to { width: 300px; } } }
+    to { width: 305px; } } }
 
 @media screen and (max-width: 500px) { .hide-site { font-size: 14px; padding: 6px 20px; } .thumbnail-container { display: flex; justify-content: space-around; } .main-title { font-size: 32px; } .hero-subtitle-container { display: none; } @keyframes animated-text { from { width: 0; }
-    to { width: 265px; } } .circle-container .circle { height: 28em; } .legal-link { font-size: 16px; } .top-header .top-header-list { justify-content: center; padding-left: 0; align-items: center; font-size: 18px; } h2.information-title { text-align: center; } }
+    to { width: 305px; } } .circle-container .circle { height: 28em; } .legal-link { font-size: 16px; } .top-header .top-header-list { justify-content: center; padding-left: 0; align-items: center; font-size: 18px; } h2.information-title { text-align: center; } }
 
 @media screen and (max-width: 825px) { .hero-ability-container { display: none; } button.choose-hero-button { font-size: 16px; padding: 7px 20px; } li .choose-hero-button-container-sm { display: inline; } li .choose-hero-button-container-sm .choose-hero-button, li .choose-hero-button-container-sm .hero-1-button.hero-2-button.hero-3-button.hero-4-button.hero-5-button { font-size: 12px; width: min-content; padding: 6px 22px; } li .hero-image-button-container { display: flex; } li .hero-image-button-container img { margin-right: -10px; } .circle-container { flex-direction: column; } .circle-container .circle { width: 100%; } .banner-container img { display: none; } .banner-container div { padding-top: 20px; padding-bottom: 20px; } .banner-container { display: none; } }
 
@@ -338,7 +338,11 @@ body { font-family: 'Montserrat', sans-serif; margin: 0; }
 
 .footer-container .disclaimer { color: white; font-size: 12px; }
 
-.footer-container .unicef-logo { width: 35%; }
+.footer-container .unicef-logo { width: 200px; }
+
+.footer-container .footer-logo-container { display: flex; flex-direction: column; }
+
+.footer-container .footer-logo-container a { padding-bottom: 20px; }
 
 @media only screen and (min-width: 477px) { .footer-container .footer-main { justify-content: space-evenly; } }
 
